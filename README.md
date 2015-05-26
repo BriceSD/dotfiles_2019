@@ -1,12 +1,10 @@
-To install it :
+Install
+===
 
-
+```bash
 git clone git://github.com/BriceSD/dotfiles.git
-
 mkdir ~/dotfiles
-
 cd ~/dotfiles
-
 chmod +x makesymlinks.sh
-
 ./makesymlinks.sh
+```
