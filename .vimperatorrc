@@ -1,0 +1,63 @@
+"3.9 (created: 2015/02/15 15:49:05)
+source ~/.vimrc.jeop
+
+command! -description="Read now with readability" readnow open javascript:(%0A%28function%28%29%7Bwindow.baseUrl%3D%27//www.readability.com%27%3Bwindow.readabilityToken%3D%27%27%3Bvar%20s%3Ddocument.createElement%28%27script%27%29%3Bs.setAttribute%28%27type%27%2C%27text/javascript%27%29%3Bs.setAttribute%28%27charset%27%2C%27UTF-8%27%29%3Bs.setAttribute%28%27src%27%2CbaseUrl%2B%27/bookmarklet/read.js%27%29%3Bdocument.documentElement.appendChild%28s%29%3B%7D%29%28%29)
+
+highlight Bell border: 0 none; background-color: #242721; font-family: Source Code Pro;
+highlight CmdLine background: #242721; color: #afafaf; font-size: 12pt; font-family: Source Code Pro; font-weight: normal; padding: 0px 3px;
+highlight CompDesc color: #c6c6c6; width: 50%;font-size: 12pt; font-family: Source Code Pro; color: #666;
+highlight CompItem[selected] background: #444741; color: #afafaf;
+highlight CompResult width: 45%; overflow: hidden;font-size: 12pt; font-family: Source Code Pro; font-weight: normal; font-family: Source Code Pro !important;
+highlight CompTitle -moz-appearance: statusbar; font-family: Source Code Pro; font-weight: bold; text-indent: 5px; height: 20px;
+highlight CompTitle>* padding: 0 .5ex; border-bottom-color: #8C8C8C;
+highlight ContentSeparator border-top: 1px dotted #ccc;
+highlight ErrorMsg color: #ffffff; background: #ff6565; font-weight: bold;
+highlight Filter font-weight: bold;color: #afafaf; border: none;
+highlight FrameIndicator background-color: #242721; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+highlight Hint font-family: Source Code Pro; font-size: 12px; font-weight: bold; background: -moz-linear-gradient(top, #6BA7EF, #3163AA); text-shadow: 0 1px #1D3C66; text-transform: uppercase; color: white; background-color: red; padding: 2px 5px; border-radius: 3px; border: 1px solid #3366AD;
+highlight HintActive background: #242721; color: #f6e9e9;
+highlight HintElem background-color: #fffac6; border-radius: 2px;
+highlight InfoMsg color: #afafaf; background: #242721;
+highlight LineNr color: #afafaf; background: #242721;
+highlight ModeMsg color: #afafaf; background: #242721; font-family: Source Code Pro;
+highlight MoreMsg color: #afafaf; background: #242721;
+highlight Normal color: #afafaf; background: #242721; font-family: Source Code Pro; font-size: 12px;
+highlight PromptText font-family: Source Code Pro; background: -moz-linear-gradient(top, #6BA7EF, #3163AA); text-shadow: 1px 1px #1D3C66; color: white; border: 1px solid #3366AD; padding: 0 7px; margin-right: 5px; border-top: none;font-size: 12px;
+highlight Question color: #afafaf; background: green; font-weight: bold;
+highlight StatusLine color: #666;
+highlight String color: #242721; background: #afafaf;
+highlight Tag color: #242721; background: #afafaf;
+highlight Tag:not(:empty) color: #355D93; background-color: #E6F2FC; border-radius: 2px; padding: 1px 2px; font-size: 10px;
+highlight Title color: #242721; background: #afafaf; font-weight: bold;
+highlight URL text-decoration: none; color: green; background: inherit;
+highlight WarningMsg color: #ff6565; background: #242721;
+
+map S :tabnext<Return>
+map T :tabNext<Return>
+noremap t 5j
+noremap s 10k
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vimperator with jéopPETM
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap e f
+noremap E F
+
+noremap i t
+noremap x c
+
+" reload with é/É
+noremap é r
+noremap É R
+set hintchars=tsrieuna
+
+set visualbell
+style! -name=statusbar chrome://* <<EOF
+#status-bar statusbarpanel { padding: 0 1px !important; }
+statusbarpanel > * { margin: 0 !important; padding: 0 2px 0 0 !important; }
+EOF
+style! -name=toolbar-background chrome://* #liberator-customize-toolbar { padding-left: 5px !important; -moz-appearance: none !important; }
+style! -name=sbmcommentviewer chrome://* .liberator-sbmcommentsviewer-content { border-color: #ccc !important; }
+source! /home/brice/.vimperatorrc.local
+
+" vim: set ft=vimperator:
