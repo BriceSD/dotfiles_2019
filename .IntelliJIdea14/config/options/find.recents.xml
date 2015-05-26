@@ -1,0 +1,17 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>iving</find>
+      <find>Giving</find>
+      <find>Of</find>
+      <find>In</find>
+      <find>Canard</find>
+      <find>menteur</find>
+      <find>salu</find>
+      <find>salut</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>caca</replace>
+    </replaceStrings>
+  </component>
+</application>

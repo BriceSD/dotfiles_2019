@@ -1,0 +1,16 @@
+<templateSet group="plain">
+  <template name="ls" value="List&lt;$TYPE$&gt; $VAR$ = new ArrayList&lt;$TYPE$&gt;($PARAMS$);&#10;$END$" description="ArrayList" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="expectedType()" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="list" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+</templateSet>

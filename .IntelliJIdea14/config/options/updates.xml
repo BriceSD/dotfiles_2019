@@ -1,0 +1,21 @@
+<application>
+  <component name="UpdatesConfigurable">
+    <knownUpdateChannels>
+      <item value="idea90" />
+      <item value="IDEA10" />
+      <item value="IDEA11" />
+      <item value="IDEA12" />
+      <item value="IDEA_13_1_EAP" />
+      <item value="IDEA13.1" />
+      <item value="IDEA14" />
+      <item value="IDEA_14_EAP" />
+      <item value="IDEA14.1" />
+      <item value="IDEA_14_1_EAP" />
+    </knownUpdateChannels>
+    <outdatedPlugins>
+      <item value="org.intellij.scala" />
+    </outdatedPlugins>
+    <option name="LAST_TIME_CHECKED" value="1428709238122" />
+    <option name="LAST_BUILD_CHECKED" value="IU-141.178" />
+  </component>
+</application>

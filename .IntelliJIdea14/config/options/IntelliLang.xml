@@ -1,0 +1,25 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <option name="INSTRUMENTATION" value="ASSERT" />
+    <option name="LANGUAGE_ANNOTATION" value="org.intellij.lang.annotations.Language" />
+    <option name="PATTERN_ANNOTATION" value="org.intellij.lang.annotations.Pattern" />
+    <option name="SUBST_ANNOTATION" value="org.intellij.lang.annotations.Subst" />
+    <option name="RESOLVE_REFERENCES" value="true" />
+    <injection language="EL" injector-id="xml">
+      <display-name>body</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("body")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+    </injection>
+    <injection language="EL" injector-id="xml">
+      <display-name>div</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("div")).withNamespace(string().equalTo("http://www.w3.org/1999/html"))]]></place>
+    </injection>
+    <injection language="EL" injector-id="xml">
+      <display-name>out/@value</display-name>
+      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("value")).withParent(xmlTag().withLocalName(string().equalTo("out")).withNamespace(string().equalTo("http://java.sun.com/jsp/jstl/core")))]]></place>
+    </injection>
+    <injection language="EL" injector-id="xml">
+      <display-name>taglib/@uri</display-name>
+      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("uri")).withParent(xmlTag().withLocalName(string().equalTo("taglib")).withNamespace(string().equalTo("http://java.sun.com/JSP/Page")))]]></place>
+    </injection>
+  </component>
+</application>

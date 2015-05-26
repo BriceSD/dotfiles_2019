@@ -1,0 +1,110 @@
+<templateSet group="General abreviatiosn">
+  <template name="kk" value="($zoneDeSaisie$)$END$" description="parenthesis" toReformat="false" toShortenFQNames="true">
+    <variable name="zoneDeSaisie" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+      <option name="JSON" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="true" />
+      <option name="JSP" value="true" />
+      <option name="SQL" value="true" />
+      <option name="ColdFusion" value="true" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="MAVEN" value="true" />
+      <option name="ASPECTJ" value="true" />
+      <option name="ACTION_SCRIPT" value="true" />
+      <option name="MXML" value="true" />
+      <option name="OGNL" value="true" />
+      <option name="GSP" value="true" />
+      <option name="SCALA" value="true" />
+      <option name="SCALA_XML" value="true" />
+      <option name="SCALA_COMMENT" value="true" />
+      <option name="SCALA_STRING" value="true" />
+      <option name="SCALA_CODE" value="true" />
+      <option name="SBT" value="true" />
+      <option name="SSP" value="true" />
+      <option name="HAML" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="true" />
+      <option name="PHP String Literal" value="true" />
+      <option name="CoffeeScript" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ll" value="{$zoneDeSaisie$}$END$" description="Accolades" toReformat="false" toShortenFQNames="true">
+    <variable name="zoneDeSaisie" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="XSL_TEXT" value="true" />
+      <option name="XML" value="true" />
+      <option name="XML_TEXT" value="true" />
+      <option name="JSON" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+      <option name="CSS_PROPERTY_VALUE" value="true" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+      <option name="CSS_RULESET_LIST" value="true" />
+      <option name="CSS" value="true" />
+      <option name="JSP" value="true" />
+      <option name="SQL" value="true" />
+      <option name="ColdFusion" value="true" />
+      <option name="CUCUMBER_FEATURE_FILE" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="TypeScript" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="MAVEN" value="true" />
+      <option name="ASPECTJ" value="true" />
+      <option name="ACTION_SCRIPT" value="true" />
+      <option name="MXML" value="true" />
+      <option name="OGNL" value="true" />
+      <option name="GSP" value="true" />
+      <option name="SCALA" value="true" />
+      <option name="SCALA_XML" value="true" />
+      <option name="SCALA_COMMENT" value="true" />
+      <option name="SCALA_STRING" value="true" />
+      <option name="SCALA_CODE" value="true" />
+      <option name="SBT" value="true" />
+      <option name="SSP" value="true" />
+      <option name="HAML" value="true" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="true" />
+      <option name="PHP String Literal" value="true" />
+      <option name="CoffeeScript" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

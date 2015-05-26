@@ -1,0 +1,26 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="751" y="390" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="988" y="230" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="700" y="590" />
+    <location key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" x="566" y="226" />
+    <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" x="808" y="435" />
+    <location key="SettingsEditor.0.0.1920.1080" x="0" y="21" />
+    <location key="new project wizard.0.0.1920.1080" x="606" y="191" />
+    <location key="#Updates.0.0.1920.1080" x="718" y="475" />
+    <location key="StructurePopup.0.0.1920.1080" x="757" y="354" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.0.0" x="0" y="713" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="464" height="491" />
+    <size key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" width="824" height="664" />
+    <size key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" width="350" height="226" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1920" height="1059" />
+    <size key="new project wizard.0.0.1920.1080" width="754" height="714" />
+    <size key="#Updates.0.0.1920.1080" width="473" height="220" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1920" height="211" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1920" height="211" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1920" height="211" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1920" height="211" />
+    <size key="StructurePopup.0.0.1920.1080" width="404" height="391" />
+    <size key="javadoc.popup.0.0.1920.1080" width="483" height="172" />
+  </component>
+</application>

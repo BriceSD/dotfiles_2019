@@ -1,0 +1,2 @@
+com.intellij.spring.roo
+IdeaSpring

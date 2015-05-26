@@ -1,0 +1,25 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="log.debug.categories" value="" />
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="1" />
+    <property name="evlsprt3.14" value="15" />
+    <property name="installation.uid" value="adc32ea5-f4eb-488c-831c-9561581e3921" />
+    <property name="default.storage.format" value=".idea (directory based)" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Code/Java/Katas&#10;/usr/lib/jvm/java-7-openjdk-amd64" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="file.colors.enable.non.project" value="494539" />
+    <property name="file.colors.enable.tests" value="2a3b2c" />
+    <property name="lastTip" value="14" />
+    <property name="ProjectStructure.SecondLevelElements" value="0.2" />
+    <property name="project.jdk.splitter" value="0.2" />
+    <property name="Non-Project Files" value="494539" />
+    <property name="Tests" value="2a3b2c" />
+    <property name="project.wizard.group" value="JAVA_MODULE" />
+    <property name="test_tree_console_proprtion" value="0.2" />
+    <property name="power.save.mode" value="false" />
+    <property name="FileTemplates.CurrentTab" value="Templates" />
+    <property name="FileTemplates.SelectedTemplate" value="Html" />
+    <property name="FileStructurePopup.narrowDown" value="true" />
+  </component>
+</application>

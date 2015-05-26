@@ -1,0 +1,38 @@
+IdeaSpring Plugin v1.2.4
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Ce plugin vous permet de visualiser les beans déclarés dans vos fichiers de configuration Spring
+et de naviguer parmi eux.
+Pour cela aller dans [Settings | IdeaSpring] et ajoutez vos groupes de fichiers de configurations.
+Cliquez sur le plugin (en bas à gauche).
+
+--
+Maurice Montgénie
+YanaWare - Offrez-vous une vitrine sur le monde
+http://www.yanaware.com/ideaspring
+
+
+Installation
+~~~~~~~~~~~~
+
+  - Copiez le répertoire idea-spring dans le répertoire config/plugins d'Idea.
+
+  - Copiez votre fichier de licence dans le répertoire config d'Idea.
+
+Fonctionnalités
+~~~~~~~~~~~~~~~~
+
+    + Navigateur de beans (navigation aisée dans les fichiers de configuration de Spring)
+
+    + Go To Declaration : ctrl-B sur les tag ref et alias permet d'aller à la déclaration du bean en question
+
+    + Go To Implementation : ctrl+atl+b pour les tags ref, property, lookup, replaced-method, alias tags et pour
+      les attributs factory-bean et factory-method
+
+    + "Ajouter le bean au fichier de config" dans le menu Generate
+
+    + Introduction d'un bean nommée (convertit un bean anonyme vers un bean nommée)
+
+    + Inline bean (convertit des tags ref en bean anonyme)
+
+    + Auto-Complétion pour les attributs (local, bean, parent, depends-on, ...)

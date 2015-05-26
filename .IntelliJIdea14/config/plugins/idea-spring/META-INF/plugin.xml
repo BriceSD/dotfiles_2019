@@ -1,0 +1,65 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin>
+    <name>IdeaSpring</name>
+    <description>
+        SpringFramework plugin for Idea (5.0.2 to 5.1) that helps you work with SpringFramework.
+    </description>
+    <application-components>
+        <component>
+            <implementation-class>com.yanaware.intellij.ideaspring.inspection.InspectionProvider</implementation-class>
+        </component>
+    </application-components>
+    <resource-bundle>com.yanaware.intellij.ideaspring.IdeaSpring</resource-bundle>
+    <version>1.2.4</version>
+    <change-notes>
+        <![CDATA[
+        ! Rename class refactoring was broken
+        ! Exception when checking if xml file was a Spring 2.0 config file
+        ]]>
+    </change-notes>
+
+    <vendor url="http://www.yanaware.com" logo="/com/yanaware/intellij/ywlogo.png" email="ideaspring@yanaware.com">Maurice Montg&#233;nie</vendor>
+    <idea-version since-build="3542"/>
+
+    <project-components>
+        <component>
+            <interface-class>com.yanaware.intellij.ToolWindowPlugin</interface-class>
+            <implementation-class>com.yanaware.intellij.ideaspring.PluginImpl</implementation-class>
+            <option name="workspace" value="true"/>
+        </component>
+        <component>
+            <interface-class>com.yanaware.intellij.config.PluginConfigurable</interface-class>
+            <implementation-class>com.yanaware.intellij.ideaspring.config.PluginConfigurableImpl</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.yanaware.intellij.ideaspring.psi.ReferencesSupport</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.yanaware.intellij.ideaspring.intention.IntentionsSupport</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.yanaware.intellij.ideaspring.psi.HighlightersSupport</implementation-class>
+        </component>
+        <component>
+            <implementation-class>com.yanaware.intellij.ideaspring.refactoring.RefactoringSupport</implementation-class>
+        </component>
+    </project-components>
+
+    <actions>
+        <action id="BeanToXml" class="com.yanaware.intellij.ideaspring.generation.BeanToXmlAction"
+                text="Bean in Spring application context">
+            <add-to-group group-id="GenerateGroup" relative-to-action="GenerateSetter" anchor="after"/>
+        </action>
+        <action id="IntroduceBean" class="com.yanaware.intellij.ideaspring.refactoring.IntroduceBeanAction" text="Introduce Named Bean"
+                description="Convert an anonymous bean to a named one">
+            <add-to-group group-id="RefactoringMenu" relative-to-action="IntroduceVariable" anchor="before"/>
+        </action>
+        
+        <group id="IdeaSpring" text="SpringFramework" popup="true">
+            <action id="IdeaSpring.Refresh"
+                    class="com.yanaware.intellij.ideaspring.RefreshAction"
+                    text="Refresh Tree">
+            </action>
+        </group>
+    </actions>
+</idea-plugin>

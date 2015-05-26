@@ -1,0 +1,9 @@
+<application>
+  <component name="UmlConfiguration">
+    <option name="categories">
+      <map>
+        <entry id="JAVA" categories="Fields;Methods;Properties" />
+      </map>
+    </option>
+  </component>
+</application>

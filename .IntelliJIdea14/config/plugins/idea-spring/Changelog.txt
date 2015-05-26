@@ -1,0 +1,95 @@
+IdeaSpring Plugin Changelog
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Changes in la version 1.2.4 (29.04.2006)
+----------------------------------------
+    ! Rename class refactoring was broken
+    ! Exception when checking if xml file was a Spring 2.0 config file
+
+Changes in la version 1.2.3 (21.04.2006)
+----------------------------------------
+    ! NullPointerException when starting trial versions
+
+Changes in la version 1.2.2 (21.04.2006)
+----------------------------------------
+    ! Constructor-args can be arguments of a factory-method
+    ! Auto completion of properties doesn't work for bean which have a parent
+    ! Parsing after saving a file raise an exception
+    + Config files for SpringFramework 2.0 (schemas based) are not fully supported but allowed
+
+Changes in la version 1.2.1 (06.04.2006)
+----------------------------------------
+ 	! Null pointer exception on Bean has bad type with Idea build 5201
+    ! Annoying dialog offering to make a versioned read-only file writable
+
+Changes in version 1.2 (03.04.2006)
+------------------------------------
+    - Plugin is now commercial (see http://www.yanaware.com/ideaspring)
+    ! All files with the xml type are accepted as config files (not only .xml files)
+    ! Bug Fix : init-method, destroy-method, replaced-method and lookup-method completion
+    ! Beans imported by the import tag are now totally handled (was handled only in the browser)
+    + Now the plugin verifies that idea-spring-parser.jar is in the lib directory
+    + QuickFix : create a new bean from an unknown referenced one
+    + Intention : converts full form of value and ref elements to shortcut form
+    + Intention : converts shortcut form of value and ref elements to full form if the bean referenced is local
+    + Refactoring : move bean
+    + Refactoring : rename bean
+    + Refactoring : rename alias
+    + When you refactor a setter in a class the corresponding property in config files is renamed
+    + Gutter Icons for classes injected into others (setters based)
+    + Unknown class used in class attribute are now highlighted
+    + Notation for inner classes is handled (MyClass$MyInnerClass)
+    + Go to declaration for classes and setters
+    + Property's name attribute validation
+    + Error highlighting for bad bean references in properties
+    + Error highlighting for constructors based on number of parameters
+    + Error highlighting for bad methods (init-method, factory-method, ...)
+    + Error highlighting for classes that are not concrete
+    + SmartType completion for properties
+    + Works in Demetra
+    + Upgraded to SpringFramework 1.2.7
+
+
+Changes in version 1.1.2 (22.02.2006)
+-------------------------------------
+    ! Completion for destroy-method attribute was broken
+
+Changes in version 1.1.1 (21.02.2006)
+-------------------------------------
+    ! Completion for ref and property elements shortcut forms was for local beans instead of global ones
+    ! Completion for factory-method was for all methods instead of only static ones
+
+Changes in version 1.1 (19.02.2006)
+-----------------------------------
+    ! Dropping support for idea 4.x.x (please use IdeaSpring 1.0.x or update at least to idea version 5.O.2
+    ! Go To menu was corrupted (fixed thanks to Sascha Weinreuter)
+    + "Add bean to context" in Generate menu (translate java into xml)
+    + Introduce named bean (convert anonymous bean to named one)
+    + Inline bean (convert refs to anonymous beans)
+    + Completion in attributes (local, bean, parent, depends-on, ...)
+
+Changes in version 1.0 (05.01.2006)
+-----------------------------------
+    ! ctrl+click on an ant property file reference throws null pointer exception
+
+Changes in version 1.0-beta3 (14.08.2005)
+-----------------------------------------
+    + Added error messages tab (handling dtd conformance errors)
+    ! Lookup methods are now displayed
+    ! Replaced methods are now displayed
+    + ctrl+b for ref and alias tags
+    + ctrl+atl+b for ref, property, lookup, replaced-method, alias tags and factory-bean and factory-method attributes
+    + Elements selected in the browser are highlighted in the editor
+    + AutoScroll from source
+    + SpeedSearch for the browser (when the browser has the focus type few letters to find a bean)
+
+Changes in version 1.0-beta2 (04.08.2005)
+-----------------------------------------
+    ! Bug: aliases where displayed in all config sets
+    + Added contextual menu 'Goto Bean Reference' when you right-click on a <someBean> entry
+    + Added contextual menu 'Goto Class' when you right-click on a bean
+    + Inner Beans are now displayed
+    + Browser is initialized (config files are scanned) when project is opened
+    + Browser is refreshed when one of the config files is modified
+    + Double-Clic or Click (with autoscroll enabled) on a property or constructor argument is now working
+    - Renamed idea-spring-parsers.jar to idea-spring-parser.jar

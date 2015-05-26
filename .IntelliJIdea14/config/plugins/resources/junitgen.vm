@@ -1,0 +1,58 @@
+########################################################################################
+##
+## Available variables:
+##         $entryList.methodList - ArrayList of method names
+##         $entryList.fieldList - ArrayList of class scope field names
+##         $entryList.className - class name
+##         $entryList.packageName - package name
+##         $today - Todays date in MM/dd/yyyy format
+##
+## You can configure the output class name using "testClass" variable below.
+## Here are some examples:
+## Test${entry.ClassName} - will produce TestSomeClass
+## ${entry.className}Test - will produce SomeClassTest
+##
+########################################################################################
+##
+#macro (cap $strIn)$strIn.valueOf($strIn.charAt(0)).toUpperCase()$strIn.substring(1)#end
+## Iteratre through the list and generate testcase for every entry.
+#foreach ($entry in $entryList)
+#set( $testClass="${entry.className}Test")
+##
+package $entry.packageName;
+
+import junit.framework.Test;
+import junit.framework.TestSuite;
+import junit.framework.TestCase;
+
+/**
+ * ${entry.className} Tester.
+ *
+ * @author <Authors name>
+ * @since <pre>$today</pre>
+ * @version 1.0
+ */
+public class $testClass extends TestCase {
+    public $testClass(String name) {
+        super(name);
+    }
+
+    public void setUp() throws Exception {
+        super.setUp();
+    }
+
+    public void tearDown() throws Exception {
+        super.tearDown();
+    }
+
+#foreach($method in $entry.methodList)
+    public void test#cap(${method})() throws Exception {
+        //TODO: Test goes here...
+    }
+
+#end
+    public static Test suite() {
+        return new TestSuite(${testClass}.class);
+    }
+}
+#end

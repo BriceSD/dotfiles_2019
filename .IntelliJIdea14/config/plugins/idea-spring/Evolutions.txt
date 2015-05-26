@@ -1,0 +1,94 @@
+Evolutions du Plugin IdeaSpring
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Changements dans la version 1.2.4 (29.04.2006)
+----------------------------------------------
+    ! Renommage d'une class ne fonctionnait plus
+    ! Exception lorsque IdeaSpring vérifiait si un fichier xml était un fichier de config de Spring 2.0
+
+Changements dans la version 1.2.3 (21.04.2006)
+----------------------------------------------
+    ! NullPointerException au démarrage des versions d'essai
+
+Changements dans la version 1.2.2 (21.04.2006)
+----------------------------------------------
+    ! Les arguments de constructeurs peuvent être des arguments de la factory-method
+    ! L'auto-complétion des propriétés ne fonctionne pas pour un bean ayant un parent
+    ! Le lancement du parser lors de l'enregistrement d'un fichier soulève une exception
+    + Les fichiers de config de SpringFramework 2.0 (utilisant un schemas) ne sont pas complètement supportés mais autorisés    
+
+Changements dans la version 1.2.1 (06.04.2006)
+----------------------------------------------
+ 	! Une exception NullPointerException était levée dans l'inspection 'Type de Bean incompatibl" avec Idea build 5201
+    ! Boîte de dialogue offrant de passer en écriture un fichier, sous contrôle de version, en lecture seule
+
+Changements dans la version 1.2 (03.04.2006)
+--------------------------------------------
+    - Le Plugin est maintenant commercial (voir http://www.yanaware.com/ideaspring)
+    ! Tous les fichiers de type xml (au sens idea) sont acceptés comme fichiers de config (pas seulement les fichiers en .xml)
+    ! Bug Fix : Complétion de init-method, destroy-method, replaced-method et lookup-method
+    ! Les beans importés par le tag import sont maintenant totalement gérés (ils n'étaient gérés que dans le navigateur)
+    + Maintenant le plugin vérifie que idea-spring-parser.jar est dans le répertoire lib
+    + QuickFix : créer un bean à partir d'une référence inconnue
+    + Intention : convertir une notation complète (éléments value et ref) en notation simplifiée
+    + Intention : convertir une notation simplifiée (éléments value et ref) en notation complète si le bean référencé est local
+    + Refactoring : déplacement d'un bean
+    + Refactoring : renommage de beans
+    + Refactoring : renommage d'alias
+    + Le renommage d'une méthode d'une classe entraîne le renommage de la propriété correspondante dans le fichier de config
+    + Icônes dans la marge de gauche pour les classes injectées dans d'autres (basé sur les setters)
+    + Les classes inconnues sont mises en évidences
+    + La notation pour les classes internes est prise en compte (MaClassa$MaClasseInterne)
+    + Possibilité d'aller directement à la déclaration des classes et des setters
+    + Validation de l'attribut name des tag property
+    + Mise en évidence des erreurs pour les mauvaises références de beans
+    + Mise en évidence des erreurs pour constructors based on number of parameters
+    + Mise en évidence des erreurs pour bad methods (init-method, factory-method, ...)
+    + Mise en évidence des erreurs pour les classes non concrètes
+    + Complétion intelligente pour les propriétés
+    + Compatible avec Demetra
+    + Utilisation de SpringFramework 1.2.7
+
+Changements dans la version 1.1.2 (22.02.2006)
+----------------------------------------------
+    ! L'auto complétion pour l'attribut destroy-method fonctionnait mal
+
+Changements dans la version 1.1.1 (21.02.2006)
+----------------------------------------------
+    ! L'auto complétion pour la notation simplifiée des éléments ref et property se limitait aux beans locaux au lieu des beans globaux
+    ! L'auto complétion pour l'attribut factory-method englobait toutes les méthodes au lieu de montrer uniquement les méthodes statiques
+
+Changements dans la version 1.1 (19.02.2006)
+--------------------------------------------
+    ! Abandon du support de idea 4.x.X (veuillez utiliser IdeaSpring 1.0.x ou utiliser une version d'idea au moin égale à 5.O.2
+    ! Le menu Go To était corrompu (corrigé grâce à Sascha Weinreuter)
+    + "Ajouter le bean au fichier de config" dans le menu Generate
+    + Introduction d'un bean nommée (convertit un bean anonyme vers un bean nommée)
+    + Inline bean (convertit des tags ref en bean anonyme)
+    + Auto-Complétion pour les attributs (local, bean, parent, depends-on, ...)
+
+Changements dans la version 1.0 (05.01.2006)
+--------------------------------------------
+    ! ctrl+click sur une propriété ant levait une null pointer exception
+
+Changements dans la version 1.0-beta3 (14.08.2005)
+--------------------------------------------------
+    + Ajout d'un onglet pour les messages d'erreurs relatifs une non conformité avec la dtd de Spring
+    ! Les méthodes Lookup sont affichées
+    ! Les méthodes Replaced sont affichées
+    + ctrl+b pour les tags ref et alias
+    + ctrl+atl+b pour les tags ref, property, lookup, replaced-method, alias tags et pour les attributs factory-bean et factory-method
+    + Les éléments sélectionnés dnas le navigateur sont mis en avant dans l'éditeur
+    + Synchronisation du navigateur avec le source
+    + Recherche rapide pour le navigateur (quand ce dernier à le focus taper quelques lettres pour trouver un bean)
+
+Changements dans la version 1.0-beta2 (04.08.2005)
+--------------------------------------------------
+    ! Bug: les alias étaient affichés dans tous les groupes de configuration
+    + Ajout d'un menu contextuel 'Aller sur' quand on cliques avec le bouton droit sur <unBean>
+    + Ajout d'un menu contextuel 'Afficher la Classe' quand on cliques avec le bouton droit sur un bean
+    + Les beans imbriqués sont maintenant affichés
+    + Le browser est initialisé (les fichiers de config sont scannés) quand un projet est ouvert
+    + Le browser est raffraîchit quand un des fichiers de config est modifié
+    + Double-Clic or Clic (avec autoscroll) sur une propriété ou un argument d'un constructeur fonctionne maintenant
+    - Renommage de idea-spring-parsers.jar en idea-spring-parser.jar

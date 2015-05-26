@@ -1,0 +1,7 @@
+<templateSet group="Zen CSS">
+  <template name="va:bl" value="vertical-align:baseline;" description="vertical-align:baseline;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

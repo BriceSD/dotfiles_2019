@@ -1,0 +1,13 @@
+<application>
+  <component name="KeyPromoterConfiguration">
+    <option name="settings">
+      <KeyPromoterSettings>
+        <option name="allButtonsEnabled" value="true" />
+        <option name="proposeToCreateShortcutCount" value="5" />
+        <option name="allButtonsEnabled" value="true" />
+        <option name="proposeToCreateShortcutCount" value="5" />
+        <option name="fixedTipPosistion" value="true" />
+      </KeyPromoterSettings>
+    </option>
+  </component>
+</application>
