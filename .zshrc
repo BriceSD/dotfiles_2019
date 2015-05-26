@@ -48,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git sudo web-search zsh-syntax-highlighting)
-
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
