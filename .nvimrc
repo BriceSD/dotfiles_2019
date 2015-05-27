@@ -71,16 +71,16 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " scrooloose/syntastic settings
-"let g:syntastic_error_symbol = '✘'
-"let g:syntastic_warning_symbol =\"▲"
-"augroup mySyntastic
-"  au!
-"  au FileType tex let b:syntastic_mode = \"passive"
-"augroup END
-"
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol ="▲"
+augroup mySyntastic
+  au!
+  au FileType tex let b:syntastic_mode = \"passive"
+augroup END
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Utility
@@ -110,7 +110,7 @@ vnoremap <leader>. :normal .<cr>
 vnoremap <leader>@ :normal @
 
 " Gitgutter settings
-let g:gitgutter_realtime
+let g:gitgutter_realtime=1
 
 " Gundo settings
 nnoremap <F7> :GundoToggle<cr>
@@ -201,6 +201,6 @@ call vundle#begin()
   Plugin 'gerw/vim-HiLinkTrace'
 
   " check syntax
-  "Plugin 'scrooloose/syntastic'
+  Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
