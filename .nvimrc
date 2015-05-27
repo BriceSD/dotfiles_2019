@@ -18,6 +18,7 @@ set ignorecase                    " ignore case in search
 set hlsearch                      " highlight all search matches
 set cursorline                    " highlight current line
 set smartcase                     " pay attention to case when caps are used
+set virtualedit=block             " Let cursor move past the last char in <C-V> mode
 set incsearch                     " show search results as I type
 set ttimeoutlen=100               " decrease timeout for faster insert with 'O'
 set vb                            " enable visual bell (disable audio bell)
@@ -98,6 +99,22 @@ nnoremap <A-t> <C-w>j
 nnoremap <A-s> <C-w>k
 nnoremap <A-r> <C-w>l
 
+" Use the repeat operator with a visual selection
+" This is useful for performing an edit on a single line, then highlighting a
+" visual block on a number of lines to repeat the edit.
+vnoremap <leader>. :normal .<cr>
+
+" Repeat a macro on a visual selection of lines
+" Same as above but with a macro; complete the command by chosing the register
+" containing the macro.
+vnoremap <leader>@ :normal @
+
+" Gitgutter settings
+let g:gitgutter_realtime
+
+" Gundo settings
+nnoremap <F7> :GundoToggle<cr>
+
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
 match ExtraWhitespace /\s\+$/
@@ -122,6 +139,12 @@ inoremap <s-tab> <c-n>
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
+
+" Restore last cursor position in file
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                   Plugins
@@ -156,11 +179,17 @@ call vundle#begin()
   " open files easily
   Plugin 'ctrlp.vim'
 
+  " show undo tree
+  Plugin 'sjl/gundo.vim'
+
   " write a page of HTML with few keystrokes
   Plugin 'tristen/vim-sparkup'
 
   " vim status bar
  " Plugin 'bling/vim-airline'
+
+  " shows a git diff in the 'gutter' (sign column)
+  Plugin 'airblade/vim-gitgutter'
 
   " proper syntax highligting for .tmux.conf
   Plugin 'tmux-plugins/vim-tmux'
