@@ -47,17 +47,29 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo web-search opp.zsh zsh-syntax-highlighting)
+plugins=(git web-search zsh-syntax-highlighting)
 
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+# Allows editing the command line with an external editor
+zle -N edit-command-line
+bindkey -M vicmd "v" edit-command-line
+
+# Set up prompt
+if [[ ! -n "$ZSHRUN" ]]; then
+    source $HOME/.zsh_shouse_prompt
+
+    # Fish shell like syntax highlighting for Zsh:
+    # git clone git://github.com/BriceSD/zsh-syntax-highlighting ~/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    #   $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    if [[ -d $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/ ]]; then
+        source $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        ZSH_HIGHLIGHT_HIGHLIGHTERS+=( main brackets pattern )
+    fi
+fi
 
 # User configuration
-
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
-
 
 
 # You may need to manually set your language environment
