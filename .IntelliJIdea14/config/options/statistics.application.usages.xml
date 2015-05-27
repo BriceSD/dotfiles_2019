@@ -1,7 +1,7 @@
 <application>
   <component name="StatisticsApplicationUsages">
-    <group name="file-type">
-      <project id="Katas" values="UNKNOWN,XML,JAVA,PlantUML file,PLAIN_TEXT,IDEA_MODULE,ARCHIVE" collectionTime="1432638586819" />
+    <group name="php-interpreters">
+      <project id="Katas" values="0" collectionTime="1432638586857" />
     </group>
     <group name="php-servers">
       <project id="Katas" values="0" collectionTime="1432638586855" />
@@ -9,20 +9,23 @@
     <group name="run-configuration-type-temp">
       <project id="Katas" values="JUnit" collectionTime="1432638586586" />
     </group>
+    <group name="run-configuration-type">
+      <project id="Katas" values="JUnit" collectionTime="1432638586586" />
+    </group>
     <group name="php-interpreter-version">
       <project id="Katas" values="not installed" collectionTime="1432638586855" />
-    </group>
-    <group name="php-debug-skipped-paths">
-      <project id="Katas" values="0" collectionTime="1432638586858" />
-    </group>
-    <group name="php-include-path">
-      <project id="Katas" values="0" collectionTime="1432638586850" />
     </group>
     <group name="language-level">
       <project id="Katas" values="JDK_1_6" collectionTime="1432638586843" />
     </group>
-    <group name="php-interpreters">
-      <project id="Katas" values="0" collectionTime="1432638586857" />
+    <group name="JavaScript versions">
+      <project id="Katas" values="DEFAULT" collectionTime="1432638586845" />
+    </group>
+    <group name="php-debug-skipped-paths">
+      <project id="Katas" values="0" collectionTime="1432638586858" />
+    </group>
+    <group name="file-type">
+      <project id="Katas" values="PLAIN_TEXT,JAVA,IDEA_MODULE,UNKNOWN,ARCHIVE,PlantUML file,XML" collectionTime="1432638586819" />
     </group>
     <group name="javaScript Scope Usages">
       <project id="Katas" values="Project,Project" collectionTime="1432638586845" />
@@ -30,11 +33,8 @@
     <group name="module type">
       <project id="Katas" values="JAVA_MODULE" collectionTime="1432638586586" />
     </group>
-    <group name="JavaScript versions">
-      <project id="Katas" values="DEFAULT" collectionTime="1432638586845" />
-    </group>
-    <group name="run-configuration-type">
-      <project id="Katas" values="JUnit" collectionTime="1432638586586" />
+    <group name="php-include-path">
+      <project id="Katas" values="0" collectionTime="1432638586850" />
     </group>
   </component>
   <component name="UsageTrigger">
@@ -44,7 +44,7 @@
       <entry feature="ide.settings.Font" count="2" />
       <entry feature="ide.settings.Keymap" count="1" />
       <entry feature="ide.settings.Updates" count="1" />
-      <entry feature="ideaapp.started" count="23" />
+      <entry feature="ideaapp.started" count="25" />
       <entry feature="tips.of.the.day.next" count="1" />
       <entry feature="welcome.screen.WelcomeScreen.Configure" count="2" />
       <entry feature="welcome.screen.WelcomeScreen.Configure.Import" count="1" />
