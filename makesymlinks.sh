@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".fonts .IntelliJIdea14 .nvim .tmux .tmuxinator .bash_aliases .bashrc .nvimrc .tmux.conf .vimperatorrc .vimrc.jeop .zshrc .oh-my-zsh"    # list of files/folders to symlink in homedir
+files=".xkb .fonts .IntelliJIdea14 .nvim .tmux .tmuxinator .bash_aliases .bashrc .nvimrc .tmux.conf .vimperatorrc .vimrc.jeop .zshrc .oh-my-zsh"    # list of files/folders to symlink in homedir
 
 ##########
 

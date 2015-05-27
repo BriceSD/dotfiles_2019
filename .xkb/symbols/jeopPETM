@@ -1,0 +1,169 @@
+//╔═════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦══════════╦════╗
+//║esc. ║    F1    ║    F2    ║    F3    ║    F4    ║    F5    ║   del    ║    F6    ║    F7    ║    F8    ║    F9    ║    F10   ║    F11   ║    F12   ║num.║
+//╚═════╩══════════╩══════════╩══════════╩══════════╩══════════╣     ins  ╠══════════╩══════════╩══════════╩══════════╩══════════╩══════════╩══════════╬════╣
+//│     │ §        │ W ‑      │   »      │   ”      │   ¿      ╠══════════╣ _ ¡ _    │ Ç        │ : : :  : │ ; ; ;  ; │   ″      │ ® ©      │  ․ ̛      ║calc║
+//│Comp.│ × º      │ w        │ " « "    │ ' “ '    │ ` ‘ `    ║    ⌫     ║ _   _    │ ç        │ : : :  : │ ; ; ;  ; │   ′      │ ° ™      │ µ  ̆   ‰  ║    ║
+//╔═════╗──────────┼──────────┼──────────┼──────────┼──────────║          ║──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╠════╣
+//║     ║ J ± +=   │ É ˝      │ O   >    │ P ≥ >=   │ È ˚      ║          ║ ˆ ! != ! │ V        │ D        │ L        │ B ¬ &&   │ Z Ə      │ →        ║mail║
+//║ @   ║ j · +    │ é ´ %    │ o œ <    │ p ≤ <=   │ è `      ║          ║ ˆ ! !  ! │ v   7    │ d   8    │ l   9    │ b ˜ &    │ z ə      │ ⇒        ║   ⇤║
+//╠═════╣──────────┼──────────┼──────────┼──────────┼──────────╠══════════╣──────────┼──────────┼──────────┼──────────┼──────────┼──────────╔══════════╬════╣
+//║     ║ A • -=   │ U Ù =    │ E € )    │ I ˙ }    │ ,  ̛ ,    ║          ║ C \ /    │ T        │ S ß      │ R        │ N        │   Alt    ║          ║ ⇪  ║
+//║Alt  ║ a — -    │ u ù =    │ e ¤ (    │ i  ̈ {    │ ,   ,    ║          ║ c / /    │ t $ 0  $ │ s # 1  # │ r ~ 2  ~ │ n   3    │    Gr    ║  Unlock  ║  AC║
+//║ gr  ║──────────┼──────────┼──────────┼──────────┼──────────║  ⏎  esc  ║──────────┼──────────┼──────────┼──────────┼──────────┼──────────║          ╠════╣
+//║     ║ À – *=   │ Y ≠      │ X   ]    │ .   .    │ K        ║          ║ ’ ? ?  ? │ Q        │ G        │ H        │ M ‡ ||   │ F        ║          ║www ║
+//║     ║ à – *    │ y ≃      │ x   [    │ . … .    │ k        ║          ║ ’ ? ?  ? │ q   4    │ g µ 5    │ h ^ 6    │ m † |  ¦ │ f        ║          ║ ⌫  ║
+//╠═════╬══════════╦══════════╦══════════╦══════════╧══════════╩══════════╩══════════╧══════════╦══════════╦══════════╦══════════╦══════════╬══════════╬════╣
+//║Over-║   Ctrl   ║          ║  Level5  ║             Espace insécable                         ║  Level5  ║   Ctrl   ║   Ctrl   ║ Overlay  ║          ║ ⇞  ║
+//║ lay ║          ║          ║    Tab   ║                                                      ║    Tab   ║          ║          ║          ║  Lock    ║  bk║
+//╠═════╬══════════╩═════╦════╩══════════╣                                                      ╠══════════╬══════════╬══════════╬══════════╣   Overlay╠════╣
+//║fn   ║      Alt       ║      ⇧        ╠══════════════════════════════════════════════════════╣    ⇧     ║   Alt    ║    Alt   ║  Start   ║          ║ ⇟  ║
+//║     ║                ║     Esc       ║                                                      ║   Esc    ║          ║          ║          ║          ║  fw║
+//╚═════╩════════════════╩═══════════════╝                                                      ╚══════════╩══════════╩══════════╩══════════╩══════════╩════╝
+
+partial alphanumeric_keys
+xkb_symbols "jeop" {
+  include "keypad(oss)"
+  include "fr(basic)"
+  include "jeopPETM(jeopPETM_Modifiers)"
+  include "jeopPETM(overlay)"
+
+  name[Group1]="French jeop Typematrix";
+
+
+
+
+  key.type[Group1] = "EIGHT_LEVEL";
+
+//First row
+  key <AE01>   { [ multiply, section, masculine, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };                     //   §
+  key <AE02>   { [ w, W, VoidSymbol, U2011, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };                                          // w W   ‑ 
+  key <AE03>   { [ quotedbl, VoidSymbol, guillemotleft, guillemotright, quotedbl, VoidSymbol, VoidSymbol, VoidSymbol ] };                     //     « «
+  key <AE04>   { [ apostrophe, VoidSymbol, leftdoublequotemark, rightdoublequotemark, apostrophe, VoidSymbol, VoidSymbol, VoidSymbol ] };             //     » » 
+  key <AE05>   { [ grave, VoidSymbol, leftsinglequotemark, questiondown, grave, VoidSymbol, VoidSymbol, VoidSymbol ] };
+
+  key <AE06>   { [ underscore, underscore, VoidSymbol, exclamdown, underscore, underscore, VoidSymbol, VoidSymbol ] };                  //
+  key <AE07>   { [ ccedilla, Ccedilla, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };                        // @   ” ¡
+  key <AE08>   { [ colon, colon, colon, colon, colon, colon, colon, colon ] };                                                          //
+  key <AE09>   { [ semicolon, semicolon, semicolon, semicolon, semicolon, semicolon, semicolon, semicolon ] };                          //
+  key <AE10>   { [ VoidSymbol, VoidSymbol, seconds, minutes, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };                      //     —
+  key <AE11>   { [ degree, registered, trademark, copyright, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };                    //   ® ™ ©
+  key <AE12>   { [ dead_greek, dead_belowdot, dead_breve, dead_horn, U2030, VoidSymbol, VoidSymbol, VoidSymbol ] };                     // µ ˘ ¯ ‰
+
+
+//Second row
+  key <TAB>    { [ at, at, at, at, at, at, at, at ] };
+  key <AD01>   { [ j, J, periodcentered, plusminus, plus, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD02>   { [ eacute, Eacute, dead_acute, dead_doubleacute , percent, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD03>   { [ o, O, oe, VoidSymbol, less, greater, VoidSymbol, VoidSymbol ] };
+  key <AD04>   { [ p, P, lessthanequal, greaterthanequal, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD05>   { [ egrave, Egrave, dead_grave, dead_abovering, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+
+  key <AD06>   { [ dead_circumflex, dead_circumflex, exclam, exclam, exclam, VoidSymbol, exclam, exclam ] };
+  key <AD07>   { [ v, V, VoidSymbol, VoidSymbol, 7, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD08>   { [ d, D, eth, ETH, 8, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD09>   { [ l, L, VoidSymbol, VoidSymbol, 9, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD10>   { [ b, B, dead_tilde, notsign, ampersand, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD11>   { [ z, Z, schwa, SCHWA, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AD12>   { [ U21D2, VoidSymbol, rightarrow, lefttarrow, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+
+
+
+//Third row
+  key <AC01>   { [ a, A, emdash, U2022, minus, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AC02>   { [ u, U, ugrave, Ugrave, equal, equal, VoidSymbol, VoidSymbol ] };
+  key <AC03>   { [ e, E, dead_currency, EuroSign, parenleft, parenright, VoidSymbol, VoidSymbol ] };
+  key <AC04>   { [ i, I, dead_diaeresis, dead_abovedot, braceleft, braceright, VoidSymbol, VoidSymbol ] };
+  key <AC05>   { [ comma, comma, comma, dead_breve, comma, comma, comma, comma ] };
+
+  key <AC06>   { [ c, C, slash, backslash, slash, slash, VoidSymbol, VoidSymbol ] };
+  key <AC07>   { [ t, T, dollar, VoidSymbol, 0, VoidSymbol, dollar, VoidSymbol ] };
+  key <AC08>   { [ s, S, numbersign, ssharp, 1, VoidSymbol, numbersign, VoidSymbol ] };
+  key <AC09>   { [ r, R, asciitilde, VoidSymbol, 2, VoidSymbol, asciitilde, VoidSymbol ] };
+  key <AC10>   { [ n, N, VoidSymbol, VoidSymbol, 3, VoidSymbol, VoidSymbol, VoidSymbol ] };
+
+
+//Fourth row
+  key <AB01>   { [ agrave, Agrave, endash, endash, asterisk, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AB02>   { [ y, Y, U2243, notequal, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AB03>   { [ x, X, VoidSymbol, VoidSymbol, bracketleft, bracketright, VoidSymbol, VoidSymbol ] };
+  key <AB04>   { [ period, period, ellipsis, VoidSymbol, period, period, period, period ] };
+  key <AB05>   { [ k, K, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+
+  key <AB06>   { [ rightsinglequotemark, rightsinglequotemark, question, question, question, question, question, question ] };
+  key <AB07>   { [ q, Q, VoidSymbol, VoidSymbol, 4, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AB08>   { [ g, G, mu, VoidSymbol, 5, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AB09>   { [ h, H, asciicircum, VoidSymbol, 6, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AB10>   { [ m, M, dagger, doubledagger, bar, VoidSymbol, VoidSymbol, brokenbar] };
+  key <AB11>   { [ f, F, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
+
+
+
+  key <I253> { type[group1] = "ONE_LEVEL", [ Tab ] };
+
+};
+
+partial alphanumeric_keys
+   xkb_symbols "overlay" {
+
+       key <LCTL> { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ SetControls(controls=Overlay1) ] };
+       key <END>  { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ SetControls(controls=Overlay1) ] };
+
+       key <RCTL> { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ LockControls(controls=Overlay1)] };
+
+
+       key <I210> { type[group1] = "ONE_LEVEL", [ Left ] };
+       key <I211> { type[group1] = "ONE_LEVEL", [ Down ] };
+       key <I212> { type[group1] = "ONE_LEVEL", [ Up ] };
+       key <I214> { type[group1] = "ONE_LEVEL", [ Right ] };
+       key <AC06> {overlay1=<I210>};
+       key <AC07> {overlay1=<I211>};
+       key <AC08> {overlay1=<I212>};
+       key <AC09> {overlay1=<I214>};
+
+
+       // ctrl-x
+       key <I215> { [ x ] };
+       key <I216> { [ F20 ] };
+       key <AB02> {overlay1=<I216>};
+       // ctrl-c
+       key <I217> { [ c ] };
+       key <I218> { [ F21 ] };
+       key <AB03> {overlay1=<I218>};
+       // ctrl-v
+       key <I219> { [ v ] };
+       key <I220> { [ F22 ] };
+       key <AB04> {overlay1=<I220>};
+   };
+
+partial modifier_keys
+xkb_symbols "jeopPETM_Modifiers" {
+  modifier_map Mod1    { Alt_L, Alt_R, <LWIN>, <LEFT> };                              //Mod1 = Alt
+  modifier_map Shift   { Shift_L, Shift_R, <LALT>, <RALT> };                          //Shift = Level2 = Shift
+  modifier_map Control { Control_L, Control_R, <MENU>, <HOME>, <UP>, <I172> };        //Control = Control
+  modifier_map Mod5    { ISO_Level3_Shift, <LFSH>, <AC11>};                           //Mod5 = Level3 = AltGr
+  modifier_map Mod3    { ISO_Level5_Shift, <HENK>, <MUHE>, <RTSH> };                  //Mod3 = Level5 = Level5
+
+  key.type[Group1] = "ONE_LEVEL";
+  key <HOME>           { [Control_R] };
+  key <UP>             { [Control_R] };
+  key <MENU>           { [Control_L] };
+  key <LWIN>           { [Alt_L] };
+  key <LEFT>           { [Alt_R] };
+  key <DOWN>           { [Alt_R] };
+  key <RGHT>           { [Super_L] };
+  key <RTSH>           { [ISO_Level5_Lock] };
+  key <I172>           { [Control_R] };
+
+
+  key.type[Group1] = "TWO_LEVEL";
+  key <LALT>           { [Shift_L, Shift_Lock] };
+  key <RALT>           { [Shift_R, Shift_Lock] };
+
+  key.type[Group1] = "FOUR_LEVEL";
+  key <LFSH>           { [ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Lock, ISO_Level3_Lock] };
+  key <AC11>           { [ISO_Level3_Shift, ISO_Level3_Shift, ISO_Level3_Lock, ISO_Level3_Lock] };
+
+  key.type[Group1] = "EIGHT_LEVEL";
+  key <HENK>           { [ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock] };
+  key <MUHE>           { [ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock, ISO_Level5_Lock] };
+};

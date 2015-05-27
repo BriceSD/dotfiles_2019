@@ -1,0 +1,29 @@
+xkb_keymap  {
+
+xkb_keycodes          { include "evdev+aliases(azerty)" };
+
+xkb_types             { include "complete" };
+
+xkb_geometry { include "typematrix(tm2030USB-106)" };
+
+xkb_compatibility {
+  include "complete"
+
+  interpret F20 {
+    action = Redirect(Key=<I215>, modifiers=Control);    // ctrl-x
+    };
+
+  interpret F21 {
+    action = Redirect(Key=<I217>, modifiers=Control);    // ctrl-c
+    };
+
+  interpret F22 {
+    action = Redirect(Key=<I219>, modifiers=Control);    // ctrl-v
+    };
+
+
+};
+
+xkb_symbols   { include "pc(pc105)+jeopPETM(jeop)" };
+
+};

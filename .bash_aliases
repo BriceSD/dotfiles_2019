@@ -27,5 +27,5 @@ alias gx='gitx --all'
 #alias get='git '
 
 # Keyboard layout
-alias jeopXcape="~/Clavier/xcape/xcape -t '200' -e 'Shift_L=Escape;Shift_R=Escape;ISO_Level5_Shift=Tab'"
-alias jeop='xkbcomp -I$HOME/Clavier/xkb $HOME/Clavier/xkb/jeopPETM.xkb $DISPLAY'
+alias jeopXcape="~/.xkb/xcape/xcape -t '200' -e 'Shift_L=Escape;Shift_R=Escape;ISO_Level5_Shift=Tab'"
+alias jeop='xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY'
