@@ -66,6 +66,8 @@ if [[ ! -n "$ZSHRUN" ]]; then
     fi
 fi
 
+export VISUAL='nvim'
+export EDITOR="$VISUAL"
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
