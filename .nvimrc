@@ -180,7 +180,7 @@ call vundle#begin()
   Plugin 'ctrlp.vim'
 
   " show undo tree
-  Plugin 'sjl/gundo.vim'
+  Plugin 'simnalamburt/vim-mundo'
 
   " write a page of HTML with few keystrokes
   Plugin 'tristen/vim-sparkup'
