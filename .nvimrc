@@ -114,6 +114,9 @@ let g:gitgutter_realtime=1
 
 " Gundo settings
 nnoremap <F7> :GundoToggle<cr>
+" Enable persistent undo so that undo history persists across vim sessions
+set undofile
+set undodir=~/.vim/undo
 
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
