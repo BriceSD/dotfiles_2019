@@ -51,11 +51,9 @@ plugins=(git web-search zsh-syntax-highlighting)
 
 # Allows editing the command line with an external editor
 zle -N edit-command-line
-bindkey -M vicmd "v" edit-command-line
 
 # Set up prompt
 if [[ ! -n "$ZSHRUN" ]]; then
-    source $HOME/.zsh_shouse_prompt
 
     # Fish shell like syntax highlighting for Zsh:
     # git clone git://github.com/BriceSD/zsh-syntax-highlighting ~/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
@@ -66,8 +64,9 @@ if [[ ! -n "$ZSHRUN" ]]; then
     fi
 fi
 
-export VISUAL='nvim'
-export EDITOR="$VISUAL"
+export EDITOR="nvim"
+export VISUAL=$EDITOR
+export GIT_EDITOR=$EDITOR
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
