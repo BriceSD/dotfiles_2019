@@ -99,6 +99,7 @@ nnoremap <A-t> <C-w>j
 nnoremap <A-s> <C-w>k
 nnoremap <A-r> <C-w>l
 
+
 " Use the repeat operator with a visual selection
 " This is useful for performing an edit on a single line, then highlighting a
 " visual block on a number of lines to repeat the edit.
@@ -116,7 +117,7 @@ let g:gitgutter_realtime=1
 nnoremap <F7> :GundoToggle<cr>
 " Enable persistent undo so that undo history persists across vim sessions
 set undofile
-set undodir=~/.vim/undo
+set undodir=~/.nvim/undo
 
 " highlight trailing spaces in annoying red
 highlight ExtraWhitespace ctermbg=1 guibg=red
