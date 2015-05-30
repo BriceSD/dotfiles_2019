@@ -97,9 +97,13 @@ xkb_symbols "jeop" {
   key <AB11>   { [ f, F, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
 
 
+//  key <MUTE> { [ XF86AudioMute ] };
+//  key <VOL-> { [ XF86AudioLowerVolume] };
+//  key <VOL+> { [ XF86AudioRaiseVolume ] };
 
   key <I253> { type[group1] = "ONE_LEVEL", [ Tab ] };
 
+  key <RCTL>           { [space] };
 };
 
 partial alphanumeric_keys
@@ -108,7 +112,8 @@ partial alphanumeric_keys
        key <LCTL> { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ SetControls(controls=Overlay1) ] };
        key <END>  { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ SetControls(controls=Overlay1) ] };
 
-       key <RCTL> { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ LockControls(controls=Overlay1)] };
+      // key <RCTL> { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ LockControls(controls=Overlay1)] };
+      key <RTSH> { type[group1] = "ONE_LEVEL", [ VoidSymbol ], actions = [ LockControls(controls=Overlay1)] };
 
 
        key <I210> { type[group1] = "ONE_LEVEL", [ Left ] };
@@ -151,7 +156,7 @@ xkb_symbols "jeopPETM_Modifiers" {
   key <LEFT>           { [Alt_R] };
   key <DOWN>           { [Alt_R] };
   key <RGHT>           { [Super_L] };
-  key <RTSH>           { [ISO_Level5_Lock] };
+  key <SPCE>           { [Super_L] };
   key <I172>           { [Control_R] };
 
 
