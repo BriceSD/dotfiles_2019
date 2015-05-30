@@ -52,15 +52,11 @@ bindsym $mod+Shift+r move right
 
 # change systeme volume
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`
-bindcode 123 exec --no-startup-id pactl set-sink-volume $sink -- +5%
-bindcode 122 exec --no-startup-id pactl set-sink-volume $sink -- -5%
+bindcode 123 exec --no-startup-id amixer set Master 5%+ unmute -q
+bindcode 122 exec --no-startup-id amixer set Master 5%- unmute -q
+#bindcode 121 exec --no-startup-id amixer set Master toggle -q
+#bindcode 121 exec --no-startup-id pactl set-sink-mute Master toggle
 bindcode 121 exec --no-startup-id pactl set-sink-mute $sink toggle
-#bindcode 121 exec exec amixer -q set Master toggle
-#bindcode 123 exec --no-startup-id pactl set-sink-volume 0 -- +5% && killall -SIGUSR1 i3status
-#bindcode 122 exec --no-startup-id pactl set-sink-volume 0 -- -5% && killall -SIGUSR1 i3status
-#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-#bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # split in horizontal orientation
 bindsym $mod+h split h
