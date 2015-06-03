@@ -15,26 +15,6 @@ set $mod Mod4
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font xft:Source\ Code\ Pro 10
 
-
-# Exec on startup
-## take care of automounting
-exec --no-startup-id "devmon --no-gui"
-
-## Background
-exec --no-startup-id feh --bg-scale $HOME/.i3/wallpaper/Stained-Glass-Vector-Lines.jpg
-
-## Keyboard layout
-exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
-exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
-
-## Music
-exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
-
-## JDownloader
-#exec --no-startup-id i3-msg 'workspace $WS10; exec jdownloader'
-
-
-
 # workspaces
 set $WS1 1
 set $WS2 2
@@ -193,4 +173,22 @@ bar {
  	status_command $HOME/.i3/bin/conky-i3bar
   # status_command i3status
 }
+
+
+# Exec on startup
+## take care of automounting
+exec --no-startup-id "devmon --no-gui"
+
+## Background
+exec --no-startup-id feh --bg-scale $HOME/.i3/wallpaper/Stained-Glass-Vector-Lines.jpg
+
+## Keyboard layout
+exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
+exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
+
+## Music
+exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
+
+## JDownloader
+#exec --no-startup-id i3-msg 'workspace $WS10; exec jdownloader'
 
