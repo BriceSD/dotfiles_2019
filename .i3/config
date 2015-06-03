@@ -21,7 +21,7 @@ font xft:Source\ Code\ Pro 10
 exec --no-startup-id "devmon --no-gui"
 
 ## Background
-exec --no-startup-id feh --bg-scale /home/brice/Images/Stained-Glass-Vector-Lines.jpg
+exec --no-startup-id feh --bg-scale $HOME/.i3/wallpaper/Stained-Glass-Vector-Lines.jpg
 
 ## Keyboard layout
 exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
@@ -31,7 +31,7 @@ exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
 exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
 
 ## JDownloader
-exec --no-startup-id i3-msg 'workspace $WS10; exec jdownloader'
+#exec --no-startup-id i3-msg 'workspace $WS10; exec jdownloader'
 
 
 
