@@ -156,7 +156,7 @@ autocmd BufReadPost *
 
 filetype off
 " set Runtime path to inc Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
+set rtp+=~/.nvim/bundle/Vundle.vim
 "begin the Vundle Plugin Opperation
 call vundle#begin()
   Plugin 'gmarik/Vundle.vim'

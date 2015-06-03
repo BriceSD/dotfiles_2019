@@ -12,12 +12,15 @@ alias mouse='gsettings set org.gnome.settings-daemon.plugins.cursor active false
 alias v='nvim'
 alias n='nvim'
 alias nv='nvim'
-alias sv='sudo nvim'
-alias sn='sudo nvim'
-alias snv='sudo nvim'
+alias sv='sudoedit'
+alias sn='sudoedit'
+alias snv='sudoedit'
 
+# Pacman
+alias pS='sudo pacman -S'
+alias yS='yaourt -S'
 
-# Git Aliases
+# Git
 alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
@@ -30,5 +33,5 @@ alias gx='gitx --all'
 #alias get='git '
 
 # Keyboard layout
-alias jeopXcape="~/.xkb/xcape/xcape -t '200' -e 'Shift_L=Escape;Shift_R=Escape;ISO_Level5_Shift=Tab;Super_L=space'"
+alias jeopXcape="~/.xkb/jeopPETMxCape.sh"
 alias jeop='xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY'

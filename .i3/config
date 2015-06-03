@@ -12,19 +12,61 @@
 set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font xft:Source\ Code\ Pro 10
+
+
+# Exec on startup
+## take care of automounting
+exec --no-startup-id "devmon --no-gui"
+
+## Background
+exec --no-startup-id feh --bg-scale /home/brice/Images/Stained-Glass-Vector-Lines.jpg
+
+## Keyboard layout
+exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
+exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
+
+## Music
+exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
+
+## JDownloader
+exec --no-startup-id i3-msg 'workspace $WS10; exec jdownloader'
+
+
+
+# workspaces
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4: www
+set $WS5 5
+set $WS6 6
+set $WS7 7
+set $WS8 8: Music
+set $WS9 9
+set $WS10 10: DL
+
+# assigns
+assign [class="Clementine"] → $WS8
+assign [class="JDownloader"] → $WS10
+
+# Firefox
+for_window [title="Library"] floating enable
+for_window [title="Firefox Preferences"] floating enable
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+j kill
 
 # start dmenu (a program launcher)
-bindsym $mod+e exec dmenu_run
+bindsym $mod+e exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+c focus left
@@ -51,15 +93,20 @@ bindsym $mod+Shift+r move right
 #bindsym $mod+Shift+Super_L move right
 
 # change systeme volume
-set $sink `pactl list short sinks | grep RUNNING | cut -f1`
+#set $sink `pactl list short sinks | grep RUNNING | cut -f1`
+#bindcode 123 exec --no-startup-id amixer set $sink 5%+ unmute -q
+#bindcode 122 exec --no-startup-id amixer set $sink 5%- unmute -q
 bindcode 123 exec --no-startup-id amixer set Master 5%+ unmute -q
 bindcode 122 exec --no-startup-id amixer set Master 5%- unmute -q
-#bindcode 121 exec --no-startup-id amixer set Master toggle -q
+bindcode 121 exec --no-startup-id amixer set Master toggle -q
 #bindcode 121 exec --no-startup-id pactl set-sink-mute Master toggle
-bindcode 121 exec --no-startup-id pactl set-sink-mute $sink toggle
+
 
 # split in horizontal orientation
 bindsym $mod+h split h
+
+# launch firefox
+bindsym $mod+x exec --no-startup-id firefox
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -73,10 +120,10 @@ bindsym $mod+eacute layout tabbed
 bindsym $mod+o layout default
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+BackSpace floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+BackSpace focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -84,36 +131,39 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindcode $mod+d focus child
 
+# jump to last urgent window
+bindsym $mod+g [urgent=latest] focus
+
 # switch to workspace
-bindsym $mod+multiply workspace 1
-bindsym $mod+w workspace 2
-bindsym $mod+quotedbl workspace 3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+grave workspace 5
-bindsym $mod+underscore workspace 6
-bindsym $mod+ccedilla workspace 7
-bindsym $mod+colon workspace 8
-bindsym $mod+semicolon workspace 9
-bindsym $mod+VoidSymbol workspace 10
+bindsym $mod+multiply workspace $WS1
+bindsym $mod+w workspace $WS2
+bindsym $mod+quotedbl workspace $WS3
+bindsym $mod+apostrophe workspace $WS4
+bindsym $mod+grave workspace $WS5
+bindsym $mod+underscore workspace $WS6
+bindsym $mod+ccedilla workspace $WS7
+bindsym $mod+colon workspace $WS8
+bindsym $mod+semicolon workspace $WS9
+bindsym $mod+VoidSymbol workspace $WS10
 
 # move focused container to workspace
-bindsym $mod+Shift+multiply move container to workspace 1
-bindsym $mod+Shift+w move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
-bindsym $mod+Shift+grave move container to workspace 5
-bindsym $mod+Shift+underscore move container to workspace 6
-bindsym $mod+Shift+ccedilla move container to workspace 7
-bindsym $mod+Shift+colon move container to workspace 8
-bindsym $mod+Shift+semicolon move container to workspace 9
-bindsym $mod+Shift+VoidSymbol move container to workspace 10
+bindsym $mod+Shift+multiply move container to workspace $WS1
+bindsym $mod+Shift+w move container to workspace $WS2
+bindsym $mod+Shift+quotedbl move container to workspace $WS3
+bindsym $mod+Shift+apostrophe move container to workspace $WS4
+bindsym $mod+Shift+grave move container to workspace $WS5
+bindsym $mod+Shift+underscore move container to workspace $WS6
+bindsym $mod+Shift+ccedilla move container to workspace $WS7
+bindsym $mod+Shift+colon move container to workspace $WS8
+bindsym $mod+Shift+semicolon move container to workspace $WS9
+bindsym $mod+Shift+VoidSymbol move container to workspace $WS10
 
 # reload the configuration file
 bindsym $mod+Shift+X reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+p restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+o exit
+# exit i3 (logs # exit i3 (logs you out of your X session)
+bindsym $mod+Shift+o exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -128,12 +178,6 @@ mode "resize" {
         bindsym s resize shrink height 10 px or 10 ppt
         bindsym r resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        #bindsym 113 resize shrink width 10 px or 10 ppt
-        #bindsym 116 resize grow height 10 px or 10 ppt
-        #bindsym 111 resize shrink height 10 px or 10 ppt
-        #bindsym 114 resize grow width 10 px or 10 ppt
-
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -144,6 +188,9 @@ bindsym $mod+p mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+  position top
+  #status_command ping google.com
+ 	status_command $HOME/.i3/bin/conky-i3bar
+  # status_command i3status
 }
 

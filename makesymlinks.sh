@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".xkb .fonts .i3 .IntelliJIdea14 .nvim .tmux .tmuxinator .bash_aliases .bashrc .nvimrc .tmux.conf .vimperatorrc .vimrc.jeop .zshrc .oh-my-zsh"    # list of files/folders to symlink in homedir
+files=".conkyrc .Xdefaults .xinitrc .i3status .xkb .fonts .i3 .IntelliJIdea14 .nvim .tmux .tmuxinator .bash_aliases .bashrc .nvimrc .tmux.conf .vimperatorrc .vimrc.jeop .zshrc .oh-my-zsh"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -22,7 +22,7 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/$file ~/dotfiles_old/
