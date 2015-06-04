@@ -30,6 +30,15 @@ TEXT
 {"full_text":"${else}"},\
 {"full_text":"${endif}${endif}${endif}"},\
 
+# Memory:
+{"full_text":"MEM","color":"\#545454","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${memperc}<30}${memeasyfree}","color":"\#909737","separator":false,"separator_block_width":6},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${memperc}<70}${memeasyfree}","color":"\#b27d12","separator":false,"separator_block_width":6},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${memperc}>=70}${memeasyfree}","color":"\#802828","separator":false,"separator_block_width":6},\
+{"full_text":"${endif}${endif}${endif}"},\
+
 # Wifi
 { "full_text" : "Wifi", "color" : "\#545454", "separator":false,"separator_block_width":6},\
 { "full_text" : "${wireless_essid wlp4s0} ${wireless_link_qual_perc wlp4s0}%" , "color" : "\#909737", "separator":false,"separator_block_width":6},\
@@ -50,15 +59,6 @@ TEXT
 {"full_text":"${if_match ${upspeedf wlp4s0}<800}${upspeed wlp4s0}","color":"\#b27d12","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf wlp4s0}>=800}${upspeed wlp4s0}","color":"\#802828","separator":false,"separator_block_width":6},\
-{"full_text":"${endif}${endif}${endif}"},\
-
-# Memory:
-{"full_text":"MEM","color":"\#545454","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${memperc}<30}${memeasyfree}","color":"\#909737","separator":false,"separator_block_width":6},\
-{"full_text":"${else}"},\
-{"full_text":"${if_match ${memperc}<70}${memeasyfree}","color":"\#b27d12","separator":false,"separator_block_width":6},\
-{"full_text":"${else}"},\
-{"full_text":"${if_match ${memperc}>=70}${memeasyfree}","color":"\#802828","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Weather:
