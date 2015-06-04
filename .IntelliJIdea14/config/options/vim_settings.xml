@@ -2,86 +2,124 @@
   <component name="VimSettings">
     <state version="4" enabled="true" />
     <globalmarks>
-      <mark key="E" line="86" column="26" filename="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/forms/CreationClientForm.java" />
       <mark key="A" line="230" column="6" filename="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/forms/CreationClientForm.java" />
+      <mark key="E" line="86" column="26" filename="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/forms/CreationClientForm.java" />
     </globalmarks>
     <filemarks>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/ComportementCancan.java" timestamp="1429896860903">
+        <mark key="[" line="9" column="2" />
+        <mark key="]" line="9" column="2" />
+        <mark key="^" line="9" column="24" />
+        <mark key="." line="9" column="2" />
+      </file>
+      <file name="/Aspect.txt.ft" timestamp="1429203261742">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/File Header.txt.ft" timestamp="1429552721865">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/ComportementVol.java" timestamp="1430084487258">
+        <mark key="[" line="10" column="15" />
+      </file>
+      <file name="C:/Code/JEE/TpFilRougeJEE/WebContent/WEB-INF/removeCommande.jsp" timestamp="1429029132412">
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="/Activity.txt.ft" timestamp="1428606131322">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/RegExp Fragment (Calculator.java:296).regexp" timestamp="1429796180269">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/I18nized Concatenation.txt.ft" timestamp="1429203443887">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/extracted/CleanCode/E09 - The Single Responsibility Principle/MasterMind/src/masterMind/strategy/RememberingGuessChecker.java" timestamp="1429744141929">
+        <mark key="[" line="18" column="10" />
+        <mark key="]" line="18" column="10" />
+        <mark key="^" line="18" column="10" />
+        <mark key="." line="18" column="10" />
+      </file>
       <file name="/Groovy JUnit SetUp Method.txt.ft" timestamp="1428605312550">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Colvert.java" timestamp="1429896373008">
-        <mark key="]" line="8" column="34" />
-        <mark key="^" line="8" column="34" />
-        <mark key="." line="8" column="34" />
-        <mark key="[" line="8" column="36" />
+      <file name="/Interface.txt.ft" timestamp="1429545490230">
+        <mark key="[" line="0" column="0" />
       </file>
-      <file name="C:/Code/Java/Katas/tests/BowlingGameTests/GameTest.java" timestamp="1429552979228">
-        <mark key="]" line="13" column="16" />
-        <mark key="^" line="13" column="16" />
-        <mark key="." line="13" column="16" />
-        <mark key="[" line="8" column="24" />
+      <file name="/Implemented Scala Method Body.txt.ft" timestamp="1428605309967">
+        <mark key="[" line="0" column="0" />
       </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/servlets/ListeClients.java" timestamp="1428649812417">
-        <mark key="[" line="16" column="18" />
+      <file name="/JUnit4 Test Class.txt.ft" timestamp="1429552727038">
+        <mark key="[" line="0" column="0" />
       </file>
-      <file name="/JavaFXApplication.txt.ft" timestamp="1429203054898">
+      <file name="/Dynamic Method Body.txt.ft" timestamp="1429203193907">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/Flex 3 Component.txt.ft" timestamp="1428606135569">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/Enum.txt.ft" timestamp="1429203587969">
+      <file name="/Implemented Method Body.txt.ft" timestamp="1429203185940">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="C:/Code/Java/Katas/testUML.puml" timestamp="1429560287533">
-        <mark key="]" line="24" column="46" />
-        <mark key="^" line="20" column="0" />
-        <mark key="." line="24" column="46" />
-        <mark key="[" line="24" column="46" />
+      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/servlets/ListeClients.java" timestamp="1428649812417">
+        <mark key="[" line="16" column="18" />
+      </file>
+      <file name="/Overridden Method Body.txt.ft" timestamp="1429203147550">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/MiniSimulateur.java" timestamp="1430043339974">
+        <mark key="'" line="19" column="0" />
+        <mark key="]" line="17" column="24" />
+        <mark key="m" line="16" column="0" />
+        <mark key="^" line="17" column="24" />
+        <mark key="." line="17" column="24" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Coincoin.java" timestamp="1429896982627">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="^" line="11" column="31" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="/New Method Body.txt.ft" timestamp="1429203177056">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/PHPUnit Test.txt.ft" timestamp="1429203616928">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/RegExp Fragment (CreationClientForm.java:8044).regexp" timestamp="1429015443403">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Canard.java" timestamp="1430825871529">
+        <mark key="a" line="31" column="0" />
+        <mark key="'" line="33" column="1" />
+        <mark key="[" line="22" column="0" />
+        <mark key="]" line="22" column="0" />
+        <mark key="m" line="6" column="38" />
+        <mark key="." line="22" column="0" />
+      </file>
+      <file name="C:/Code/Java/Katas/StringCalculator/tests/StringCalculatorTest.java" timestamp="1429214637255">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="/ColdFusion Script Interface.txt.ft" timestamp="1428606135129">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="/ColdFusion Tag Interface.txt.ft" timestamp="1428605282159">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/Dummy.regexp" timestamp="1429015465262">
+      <file name="/cdi.beans_1_0.txt.ft" timestamp="1429203244236">
         <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/I18nized JSP Expression.txt.ft" timestamp="1428530693019">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/WebContent/WEB-INF/creerCommande.jsp" timestamp="1429024414501">
-        <mark key="]" line="18" column="32" />
-        <mark key="." line="18" column="32" />
-        <mark key="[" line="18" column="32" />
-      </file>
-      <file name="/package-info.txt.ft" timestamp="1429203585850">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/MavenKatas/profiles.xml" timestamp="1429558849605">
-        <mark key="]" line="9" column="11" />
-        <mark key="^" line="9" column="11" />
-        <mark key="." line="9" column="11" />
-        <mark key="[" line="9" column="15" />
       </file>
       <file name="C:/Code/Java/Katas/StringCalculator/src/test/StringCalculatorTest.java" timestamp="1429212595565">
+        <mark key="[" line="0" column="0" />
         <mark key="]" line="0" column="0" />
         <mark key="." line="0" column="0" />
-        <mark key="[" line="0" column="0" />
       </file>
-      <file name="/Groovy New Method Body.txt.ft" timestamp="1429210041800">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/test/java/com/training/testOfTest.java" timestamp="1429891753848">
-        <mark key="]" line="11" column="0" />
-        <mark key="." line="11" column="0" />
-        <mark key="[" line="11" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Cancan.java" timestamp="1429896915236">
-        <mark key="]" line="11" column="29" />
-        <mark key="^" line="11" column="29" />
-        <mark key="." line="11" column="29" />
-        <mark key="[" line="11" column="1" />
-      </file>
-      <file name="/AnnotationType.txt.ft" timestamp="1429203587291">
+      <file name="/I18nized Groovy string with injections.txt.ft" timestamp="1428605311678">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/Overridden Scala Method Body.txt.ft" timestamp="1429203175990">
@@ -90,306 +128,268 @@
       <file name="/application.5.txt.ft" timestamp="1429203254392">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Downloads/extracted/CleanCode/E09 - The Single Responsibility Principle/MasterMind/src/masterMind/strategy/RememberingGuessChecker.java" timestamp="1429744141929">
-        <mark key="]" line="18" column="10" />
-        <mark key="^" line="18" column="10" />
-        <mark key="." line="18" column="10" />
-        <mark key="[" line="18" column="10" />
-      </file>
-      <file name="/New Method Body.txt.ft" timestamp="1429203177056">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/CancanMuet.java" timestamp="1429896936267">
-        <mark key="[" line="11" column="4" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Canard.java" timestamp="1430825871529">
-        <mark key="'" line="33" column="1" />
-        <mark key="a" line="31" column="0" />
-        <mark key="]" line="22" column="0" />
-        <mark key="m" line="6" column="38" />
-        <mark key="." line="22" column="0" />
-        <mark key="[" line="22" column="0" />
-      </file>
-      <file name="/Groovy JUnit Test Case.txt.ft" timestamp="1429212864839">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/PHP Field Doc Comment.txt.ft" timestamp="1429203424986">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/JUnit3 TearDown Method.txt.ft" timestamp="1428605309190">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Catch Statement Body.txt.ft" timestamp="1429554606139">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/RegExp Fragment (CreationClientForm.java:8044).regexp" timestamp="1429015443403">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/JUnit4 TearDown Method.txt.ft" timestamp="1429545450416">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/Katas/tests/PalindromeCheckerTests/PalindromeCheckerTests.java" timestamp="1429517329367">
-        <mark key="]" line="12" column="0" />
-        <mark key="^" line="8" column="21" />
-        <mark key="." line="12" column="0" />
-        <mark key="[" line="12" column="0" />
-      </file>
-      <file name="/I18nized Concatenation.txt.ft" timestamp="1429203443887">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/JavaScript File.txt.ft" timestamp="1428605284240">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/VolerAvecDesAiles.java" timestamp="1429896721215">
-        <mark key="]" line="11" column="33" />
-        <mark key="^" line="11" column="33" />
-        <mark key="." line="11" column="33" />
-        <mark key="[" line="8" column="31" />
-      </file>
-      <file name="/Gradle Build Script with wrapper.txt.ft" timestamp="1428605283824">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/PHP Setter Method.txt.ft" timestamp="1428605303808">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/pom.xml" timestamp="1429891284603">
-        <mark key="]" line="47" column="0" />
-        <mark key="^" line="47" column="0" />
-        <mark key="." line="47" column="0" />
-        <mark key="[" line="47" column="17" />
-      </file>
-      <file name="/JUnit4 SetUp Method.txt.ft" timestamp="1429203461900">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/servlets/ListeCommandes.java" timestamp="1428649841324">
-        <mark key="[" line="13" column="18" />
-      </file>
-      <file name="C:/Code/Java/Katas/testUML_Sequence.puml" timestamp="1429559072213">
-        <mark key="[" line="5" column="46" />
-      </file>
-      <file name="/Interface.txt.ft" timestamp="1429545490230">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/ColdFusion Script Component.txt.ft" timestamp="1428605281343">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Application.txt.ft" timestamp="1429212847807">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/layoutResourceFile.txt.ft" timestamp="1428606130594">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/ComportementCancan.java" timestamp="1429896860903">
-        <mark key="]" line="9" column="2" />
-        <mark key="^" line="9" column="24" />
-        <mark key="." line="9" column="2" />
-        <mark key="[" line="9" column="2" />
-      </file>
-      <file name="/Groovy JUnit Test Method.txt.ft" timestamp="1429212864940">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/JUnit.txt.ft" timestamp="1429213665985">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Overridden Method Body.txt.ft" timestamp="1429203147550">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Implemented Scala Method Body.txt.ft" timestamp="1428605309967">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/ActionScript File Header.txt.ft" timestamp="1429552718737">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/JUnit4 Test Class.txt.ft" timestamp="1429552727038">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Service.txt.ft" timestamp="1429212848749">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Xhtml.txt.ft" timestamp="1429545490775">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Aspect.txt.ft" timestamp="1429203261742">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/Katas/StringCalculator/src/StringCalculator.java" timestamp="1429212573695">
-        <mark key="[" line="7" column="31" />
-      </file>
-      <file name="/JUnit4 Test Method.txt.ft" timestamp="1429545478766">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/PHPUnit Test.txt.ft" timestamp="1429203616928">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Downloads/extracted/CleanCode/E09 - The Single Responsibility Principle/MasterMind/src/masterMind/gameInterface/Game.java" timestamp="1429704964699">
-        <mark key="]" line="40" column="41" />
-        <mark key="^" line="40" column="41" />
-        <mark key="." line="40" column="41" />
-        <mark key="[" line="40" column="42" />
-      </file>
-      <file name="C:/Code/Java/Katas/StringCalculator/tests/StringCalculatorTest.java" timestamp="1429214637255">
-        <mark key="]" line="10" column="0" />
-        <mark key="." line="10" column="0" />
-        <mark key="[" line="10" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/ComportementVol.java" timestamp="1430084487258">
-        <mark key="[" line="10" column="15" />
-      </file>
-      <file name="/Implemented Method Body.txt.ft" timestamp="1429203185940">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Mobile I18N.txt.ft" timestamp="1429203177817">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Activity.txt.ft" timestamp="1428606131322">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Coincoin.java" timestamp="1429896982627">
-        <mark key="]" line="10" column="0" />
-        <mark key="^" line="11" column="31" />
-        <mark key="." line="10" column="0" />
-        <mark key="[" line="10" column="0" />
-      </file>
-      <file name="/application.1_2.txt.ft" timestamp="1429203252373">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Dynamic Method Body.txt.ft" timestamp="1429203193907">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/Katas/tests/StringCalculatorKataTests/StringCalculatorTest.java" timestamp="1429824888605">
-        <mark key="]" line="47" column="30" />
-        <mark key="^" line="47" column="30" />
-        <mark key="." line="47" column="30" />
-        <mark key="[" line="47" column="25" />
-      </file>
-      <file name="/PHP Class.txt.ft" timestamp="1428606136377">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Singleton.txt.ft" timestamp="1429203051974">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/I18nized Expression.txt.ft" timestamp="1429203196761">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/cdi.beans_1_1.txt.ft" timestamp="1429203243547">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/@Aspect.txt.ft" timestamp="1429203261089">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/PHP Class Doc Comment.txt.ft" timestamp="1429552720973">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/application.1_4.txt.ft" timestamp="1429203253086">
-        <mark key="[" line="0" column="0" />
-      </file>
       <file name="/Groovy JUnit TearDown Method.txt.ft" timestamp="1429212864591">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/JUnit4 Parameters Method.txt.ft" timestamp="1429203460763">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/JUnit3 Test Method.txt.ft" timestamp="1428605308567">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Package Object.txt.ft" timestamp="1428606135985">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/AndroidManifest.txt.ft" timestamp="1428605314735">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/forms/CreationClientForm.java" timestamp="1429905494987" />
-      <file name="/File Header.txt.ft" timestamp="1429552721865">
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/MiniSimulateur.java" timestamp="1430043339974">
-        <mark key="'" line="19" column="0" />
-        <mark key="]" line="17" column="24" />
-        <mark key="^" line="17" column="24" />
-        <mark key="m" line="16" column="0" />
-        <mark key="." line="17" column="24" />
-      </file>
-      <file name="/Class.txt.ft" timestamp="1429545489566">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/PrototypeCanard.java" timestamp="1430084108970">
-        <mark key="'" line="9" column="4" />
-        <mark key="]" line="16" column="23" />
-        <mark key="^" line="16" column="23" />
-        <mark key="m" line="11" column="4" />
-        <mark key="." line="16" column="23" />
-        <mark key="k" line="11" column="4" />
-        <mark key="[" line="16" column="24" />
-      </file>
-      <file name="/ColdFusion Script Interface.txt.ft" timestamp="1428606135129">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/beans/Client.java" timestamp="1428926602264">
-        <mark key="]" line="13" column="26" />
-        <mark key="." line="13" column="26" />
-        <mark key="[" line="13" column="26" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/NePasVoler.java" timestamp="1429907400360">
-        <mark key="]" line="10" column="0" />
-        <mark key="^" line="10" column="0" />
-        <mark key="." line="10" column="0" />
-        <mark key="[" line="10" column="0" />
-      </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/servlets/RemoveCommande.java" timestamp="1429029948599">
-        <mark key="]" line="39" column="0" />
-        <mark key="." line="39" column="0" />
-        <mark key="[" line="39" column="0" />
-      </file>
-      <file name="C:/Code/JEE/TpFilRougeJEE/WebContent/WEB-INF/removeCommande.jsp" timestamp="1429029132412">
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/cdi.beans_1_0.txt.ft" timestamp="1429203244236">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/PropulsionAReaction.java" timestamp="1429898957980">
-        <mark key="]" line="11" column="50" />
-        <mark key="^" line="11" column="50" />
-        <mark key="." line="11" column="50" />
-        <mark key="[" line="11" column="3" />
-      </file>
-      <file name="/Dummy.txt" timestamp="1429568301938">
-        <mark key="[" line="0" column="0" />
-      </file>
-      <file name="/Html5.txt.ft" timestamp="1429203486191">
+      <file name="/ColdFusion Script Component.txt.ft" timestamp="1428605281343">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="C:/Code/Java/HeadFirst/ProblemeDeConception.puml" timestamp="1430051437713">
         <mark key="'" line="0" column="0" />
         <mark key="[" line="23" column="0" />
       </file>
-      <file name="/Drupal Hook Implementation Doc Comment.txt.ft" timestamp="1429552720029">
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/CancanMuet.java" timestamp="1429896936267">
+        <mark key="[" line="11" column="4" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/NePasVoler.java" timestamp="1429907400360">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="^" line="10" column="0" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="C:/Code/JEE/TpFilRougeJEE/WebContent/WEB-INF/creerCommande.jsp" timestamp="1429024414501">
+        <mark key="[" line="18" column="32" />
+        <mark key="]" line="18" column="32" />
+        <mark key="." line="18" column="32" />
+      </file>
+      <file name="/PHP Setter Method.txt.ft" timestamp="1428605303808">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/fragment.java" timestamp="1429898935028">
+      <file name="/Gradle Build Script with wrapper.txt.ft" timestamp="1428605283824">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/I18nized Groovy string with injections.txt.ft" timestamp="1428605311678">
+      <file name="/I18nized Expression.txt.ft" timestamp="1429203196761">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/package-info.txt.ft" timestamp="1429203585850">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/JavaScript File.txt.ft" timestamp="1428605284240">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/beans/Client.java" timestamp="1428926602264">
+        <mark key="[" line="13" column="26" />
+        <mark key="]" line="13" column="26" />
+        <mark key="." line="13" column="26" />
+      </file>
+      <file name="/layoutResourceFile.txt.ft" timestamp="1428606130594">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/AnnotationType.txt.ft" timestamp="1429203587291">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/Html.txt.ft" timestamp="1431531788082">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/RegExp Fragment (Calculator.java:296).regexp" timestamp="1429796180269">
+      <file name="/Groovy JUnit Test Method.txt.ft" timestamp="1429212864940">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Cancan.java" timestamp="1429896915236">
+        <mark key="[" line="11" column="1" />
+        <mark key="]" line="11" column="29" />
+        <mark key="^" line="11" column="29" />
+        <mark key="." line="11" column="29" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/pom.xml" timestamp="1429891284603">
+        <mark key="[" line="47" column="17" />
+        <mark key="]" line="47" column="0" />
+        <mark key="^" line="47" column="0" />
+        <mark key="." line="47" column="0" />
+      </file>
+      <file name="/application.1_4.txt.ft" timestamp="1429203253086">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Service.txt.ft" timestamp="1429212848749">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/servlets/RemoveCommande.java" timestamp="1429029948599">
+        <mark key="[" line="39" column="0" />
+        <mark key="]" line="39" column="0" />
+        <mark key="." line="39" column="0" />
+      </file>
+      <file name="/@Aspect.txt.ft" timestamp="1429203261089">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/JUnit3 TearDown Method.txt.ft" timestamp="1428605309190">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/PrototypeCanard.java" timestamp="1430084108970">
+        <mark key="'" line="9" column="4" />
+        <mark key="k" line="11" column="4" />
+        <mark key="[" line="16" column="24" />
+        <mark key="]" line="16" column="23" />
+        <mark key="m" line="11" column="4" />
+        <mark key="^" line="16" column="23" />
+        <mark key="." line="16" column="23" />
+      </file>
+      <file name="C:/Code/Java/Katas/tests/PalindromeCheckerTests/PalindromeCheckerTests.java" timestamp="1429517329367">
+        <mark key="[" line="12" column="0" />
+        <mark key="]" line="12" column="0" />
+        <mark key="^" line="8" column="21" />
+        <mark key="." line="12" column="0" />
+      </file>
+      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/forms/CreationClientForm.java" timestamp="1429905494987" />
+      <file name="/Groovy JUnit Test Case.txt.ft" timestamp="1429212864839">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Downloads/extracted/CleanCode/E09 - The Single Responsibility Principle/MasterMind/src/masterMind/gameInterface/Game.java" timestamp="1429704964699">
+        <mark key="[" line="40" column="42" />
+        <mark key="]" line="40" column="41" />
+        <mark key="^" line="40" column="41" />
+        <mark key="." line="40" column="41" />
+      </file>
+      <file name="C:/Code/Java/Katas/StringCalculator/src/StringCalculator.java" timestamp="1429212573695">
+        <mark key="[" line="7" column="31" />
+      </file>
+      <file name="/Xhtml.txt.ft" timestamp="1429545490775">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Catch Statement Body.txt.ft" timestamp="1429554606139">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/JUnit.txt.ft" timestamp="1429213665985">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Dummy.regexp" timestamp="1429015465262">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/ActionScript File Header.txt.ft" timestamp="1429552718737">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/MavenKatas/profiles.xml" timestamp="1429558849605">
+        <mark key="[" line="9" column="15" />
+        <mark key="]" line="9" column="11" />
+        <mark key="^" line="9" column="11" />
+        <mark key="." line="9" column="11" />
+      </file>
+      <file name="/JUnit4 TearDown Method.txt.ft" timestamp="1429545450416">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/PHP Class.txt.ft" timestamp="1428606136377">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Package Object.txt.ft" timestamp="1428606135985">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/test/java/com/training/testOfTest.java" timestamp="1429891753848">
+        <mark key="[" line="11" column="0" />
+        <mark key="]" line="11" column="0" />
+        <mark key="." line="11" column="0" />
+      </file>
+      <file name="C:/Code/Java/Katas/testUML_Sequence.puml" timestamp="1429559072213">
+        <mark key="[" line="5" column="46" />
+      </file>
+      <file name="/AndroidManifest.txt.ft" timestamp="1428605314735">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/PropulsionAReaction.java" timestamp="1429898957980">
+        <mark key="[" line="11" column="3" />
+        <mark key="]" line="11" column="50" />
+        <mark key="^" line="11" column="50" />
+        <mark key="." line="11" column="50" />
+      </file>
+      <file name="C:/Code/JEE/TpFilRougeJEE/src/com/sdzjee/tp/servlets/ListeCommandes.java" timestamp="1428649841324">
+        <mark key="[" line="13" column="18" />
+      </file>
+      <file name="/JUnit4 Parameters Method.txt.ft" timestamp="1429203460763">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Application.txt.ft" timestamp="1429212847807">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/application.1_2.txt.ft" timestamp="1429203252373">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="/resourceFile.txt.ft" timestamp="1428605315134">
         <mark key="[" line="0" column="0" />
       </file>
+      <file name="/JUnit4 SetUp Method.txt.ft" timestamp="1429203461900">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/cdi.beans_1_1.txt.ft" timestamp="1429203243547">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/Katas/tests/StringCalculatorKataTests/StringCalculatorTest.java" timestamp="1429824888605">
+        <mark key="[" line="47" column="25" />
+        <mark key="]" line="47" column="30" />
+        <mark key="^" line="47" column="30" />
+        <mark key="." line="47" column="30" />
+      </file>
+      <file name="/I18nized JSP Expression.txt.ft" timestamp="1428530693019">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/Katas/testUML.puml" timestamp="1429560287533">
+        <mark key="[" line="24" column="46" />
+        <mark key="]" line="24" column="46" />
+        <mark key="^" line="20" column="0" />
+        <mark key="." line="24" column="46" />
+      </file>
+      <file name="/JavaFXApplication.txt.ft" timestamp="1429203054898">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Html5.txt.ft" timestamp="1429203486191">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/PHP Field Doc Comment.txt.ft" timestamp="1429203424986">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Singleton.txt.ft" timestamp="1429203051974">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1429568301938">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/Colvert.java" timestamp="1429896373008">
+        <mark key="[" line="8" column="36" />
+        <mark key="]" line="8" column="34" />
+        <mark key="^" line="8" column="34" />
+        <mark key="." line="8" column="34" />
+      </file>
       <file name="$USER_HOME$/Code/Java/Katas/tests/BowlingGameTests/GameTest.java" timestamp="1432638545151">
         <mark key="'" line="0" column="0" />
+        <mark key="[" line="87" column="2" />
         <mark key="]" line="87" column="1" />
         <mark key="^" line="87" column="2" />
         <mark key="." line="87" column="1" />
-        <mark key="[" line="87" column="2" />
+      </file>
+      <file name="C:/Code/Java/HeadFirst/src/main/java/com/training/patterns/strategy/VolerAvecDesAiles.java" timestamp="1429896721215">
+        <mark key="[" line="8" column="31" />
+        <mark key="]" line="11" column="33" />
+        <mark key="^" line="11" column="33" />
+        <mark key="." line="11" column="33" />
+      </file>
+      <file name="/Groovy New Method Body.txt.ft" timestamp="1429210041800">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Enum.txt.ft" timestamp="1429203587969">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Class.txt.ft" timestamp="1429545489566">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Drupal Hook Implementation Doc Comment.txt.ft" timestamp="1429552720029">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="C:/Code/Java/Katas/tests/BowlingGameTests/GameTest.java" timestamp="1429552979228">
+        <mark key="[" line="8" column="24" />
+        <mark key="]" line="13" column="16" />
+        <mark key="^" line="13" column="16" />
+        <mark key="." line="13" column="16" />
+      </file>
+      <file name="/PHP Class Doc Comment.txt.ft" timestamp="1429552720973">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/Mobile I18N.txt.ft" timestamp="1429203177817">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/JUnit4 Test Method.txt.ft" timestamp="1429545478766">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/JUnit3 Test Method.txt.ft" timestamp="1428605308567">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1429898935028">
+        <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -501,32 +501,20 @@
       <register name="d" type="4">
         <text />
       </register>
-      <register name="/" type="4">
-        <text encoding="base64">XDwhXD4=</text>
-      </register>
       <register name="i" type="4">
         <text>d</text>
       </register>
       <register name="-" type="4">
         <text />
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgIGFzc2VydEVxdWFscygyMiwgZ2FtZS5zY29yZSgpKTsK</text>
-      </register>
-      <register name="2" type="4">
-        <text />
-      </register>
-      <register name="1" type="2">
-        <text encoding="base64">c3Nzc3Nzc3Nzc3Nzc3Nzc3MK</text>
+      <register name="/" type="4">
+        <text encoding="base64">XDwhXD4=</text>
       </register>
       <register name="0" type="4">
         <text encoding="base64">IDx8LS0gQ29tcG9ydGVtZW50QXJtZQ==</text>
       </register>
-      <register name="7" type="4">
-        <text>/</text>
-      </register>
-      <register name="6" type="4">
-        <text>/</text>
+      <register name="1" type="2">
+        <text encoding="base64">c3Nzc3Nzc3Nzc3Nzc3Nzc3MK</text>
       </register>
       <register name="q" type="4">
         <keys>
@@ -548,20 +536,32 @@
           <key char="106" code="0" mods="0" />
         </keys>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgIGFzc2VydFRoYXQoZG9OUm9sbHNPZigpOyk7Cg==</text>
+      <register name="2" type="4">
+        <text />
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGFzc2VydEVxdWFscygyMiwgZ2FtZS5zY29yZSgpKTsK</text>
       </register>
       <register name="4" type="2">
         <text encoding="base64">ICAgIGFzc2VydFRoYXQoZ2FtZS5zY29yZSgpLCBlcXVhbHMoMzAwKSk7Cg==</text>
       </register>
-      <register name=":" type="4">
-        <text>set relativenumber</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIGFzc2VydFRoYXQoZG9OUm9sbHNPZigpOyk7Cg==</text>
+      </register>
+      <register name="6" type="4">
+        <text>/</text>
+      </register>
+      <register name="7" type="4">
+        <text>/</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="9" type="2">
         <text encoding="base64">aW1wb3J0IG9yZy5qZXRicmFpbnMuYW5ub3RhdGlvbnMuTm90TnVsbDsK</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name=":" type="4">
+        <text>set relativenumber</text>
       </register>
     </registers>
     <search>
