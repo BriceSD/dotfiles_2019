@@ -7,8 +7,18 @@ TEXT
 
 [\
 # MPD
-{ "full_text" : ${if_mpd_playing} "now_playing ", "color" : "\#545454", "separator" : false, "separator_block_width" : 3 },\
-{ "full_text" : "${mpd_artist 20} - ${mpd_title 30}"${else}""${endif}, "color" : "\#909737", "min_width" : 300, "separator" : false, "separator_block_width" : 3 },\
+#{ "full_text" : ${if_mpd_playing} "now_playing ", "color" : "\#545454", "separator" : false, "separator_block_width" : 3 },\
+#{ "full_text" : "${mpd_artist 20} - ${mpd_title 30}"${else}""${endif}, "color" : "\#909737", "min_width" : 300, "separator" : false, "separator_block_width" : 3 },\
+
+# CPU:
+## CPU 0
+{"full_text":"CPU","color":"\#545454","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}%","color":"\#909737","separator":false,"separator_block_width":6},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${cpu cpu0}<60E}${cpu cpu0}%","color":"\#b27d12","separator":false,"separator_block_width":6},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}%","color":"\#802828","separator":false,"separator_block_width":6},\
+{"full_text":"${endif}${endif}${endif}"},\
 
 # CPU temperature:
 {"full_text":"CPU","color":"\#545454","separator":false,"separator_block_width":6},\
@@ -51,27 +61,18 @@ TEXT
 {"full_text":"${if_match ${memperc}>=70}${memeasyfree}","color":"\#802828","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}"},\
 
-# CPU:
-{"full_text":"CPU","color":"\#545454","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}%","color":"\#909737","separator":false,"separator_block_width":6},\
-{"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<60E}${cpu cpu0}%","color":"\#b27d12","separator":false,"separator_block_width":6},\
-{"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}%","color":"\#802828","separator":false,"separator_block_width":6},\
-{"full_text":"${endif}${endif}${endif}"},\
-
 # Weather:
 #{"full_text":"☂","color":"\#545454","separator":false,"separator_block_width":6},\
 #{"full_text":"${execi 300 ~/bin/weather_simple "EUR|UK|UK241|LONDON"}","color":"\#EEEEEE","separator":false,"separator_block_width":6},\
 
 # Mail:
-{"full_text":"MAIL","color":"\#545454","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${execpi 60 python ~/bin/gmail.py}<=0}${execpi 60 python ~/bin/gmail.py}","color":"\#909737","separator":false,"separator_block_width":6},\
-{"full_text":"${else}"},\
-{"full_text":"${if_match ${execpi 60 python ~/bin/gmail.py}<2}${execpi 60 python ~/bin/gmail.py}","color":"\#b27d12","separator":false,"separator_block_width":6},\
-{"full_text":"${else}"},\
-{"full_text":"${if_match ${execpi 60 python ~/bin/gmail.py}>2}${execpi 60 python ~/bin/gmail.py}","color":"\#802828","separator":false,"separator_block_width":6},\
-{"full_text":"${endif}${endif}${endif}"},\
+#{"full_text":"MAIL","color":"\#545454","separator":false,"separator_block_width":6},\
+#{"full_text":"${if_match ${execpi 60 python ~/bin/gmail.py}<=0}${execpi 60 python ~/bin/gmail.py}","color":"\#909737","separator":false,"separator_block_width":6},\
+#{"full_text":"${else}"},\
+#{"full_text":"${if_match ${execpi 60 python ~/bin/gmail.py}<2}${execpi 60 python ~/bin/gmail.py}","color":"\#b27d12","separator":false,"separator_block_width":6},\
+#{"full_text":"${else}"},\
+#{"full_text":"${if_match ${execpi 60 python ~/bin/gmail.py}>2}${execpi 60 python ~/bin/gmail.py}","color":"\#802828","separator":false,"separator_block_width":6},\
+#{"full_text":"${endif}${endif}${endif}"},\
 
 # Battery:
 {"full_text":"BAT","color":"\#545454","separator":false,"separator_block_width":6},\
@@ -83,12 +84,18 @@ TEXT
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Dropbox
-{"full_text":"DB","color":"\#545454","separator":false,"separator_block_width":6},\
-{"full_text":"${execi 6 dropbox status | sed -n 1p}","color":"\#909737","separator":false},\
+#{"full_text":"DB","color":"\#545454","separator":false,"separator_block_width":6},\
+#{"full_text":"${execi 6 dropbox status | sed -n 1p}","color":"\#909737","separator":false},\
 
 # Volume:
 {"full_text":"VOL","color":"\#545454","separator":false,"separator_block_width":6},\
 {"full_text":"${execi 1 amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g'}","color":"\#909737","separator":false},\
+
+# Music
+{"full_text":"${execi 10 ~/.i3/conky/conky-clementine}","color":"\#909737","separator":false},\
+#{"full_text":"Title ${execi 1 conkyClementine --nounknownoutput -m 27 -d AR}","color":"\#909737","separator":false},\
+#Artist:${color b26f7a}${mpd_artist}${color 9c77b2} * ${color 7086b2}
+#Album:${color b26f7a}${mpd_album}${color 9c77b2}
 
 # Date:
 {"full_text":"|","color":"\#545454","separator":false,"separator_block_width":6},\

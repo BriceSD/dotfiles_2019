@@ -13,7 +13,9 @@ set $mod Mod4
 
 # font for window titles. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font xft:Source\ Code\ Pro 10
+set $fonttype "pango:Terminus 9"
+font $fonttype
+#font xft:Source\ Code\ Pro 10
 
 # workspaces
 set $WS1 1
@@ -31,62 +33,57 @@ set $WS10 10: DL
 assign [class="Clementine"] → $WS8
 assign [class="JDownloader"] → $WS10
 
-# Firefox
+# floating by default
+## Firefox
 for_window [title="Library"] floating enable
 for_window [title="Firefox Preferences"] floating enable
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# Bind applications
+## launch firefox
+bindsym $mod+x exec --no-startup-id firefox
 
-# start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
+## launch intellij idea
+bindsym $mod+y exec --no-startup-id sh $HOME/IntelliJIdea/bin/idea.sh
+
+## launch urxvt (terminal)
 bindsym $mod+Return exec urxvt
 
-# kill focused window
+# Navigation
+## Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+## kill focused window
 bindsym $mod+Shift+j kill
 
-# start dmenu (a program launcher)
+## start dmenu (a program launcher)
 bindsym $mod+e exec --no-startup-id i3-dmenu-desktop
 
-# change focus
+## change focus
 bindsym $mod+c focus left
 bindsym $mod+t focus down
 bindsym $mod+s focus up
 bindsym $mod+r focus right
 
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Alt_R focus left
-#bindsym $mod+Alt_R focus down
-#bindsym $mod+Control_R focus up
-#bindsym $mod+Super_L focus right
-
-# move focused window
+## move focused window
 bindsym $mod+Shift+c move left
 bindsym $mod+Shift+t move down
 bindsym $mod+Shift+s move up
 bindsym $mod+Shift+r move right
 
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Shift+Alt_R move left
-#bindsym $mod+Shift+Alt_R move down
-#bindsym $mod+Shift+Control_R move up
-#bindsym $mod+Shift+Super_L move right
-
 # change systeme volume
-#set $sink `pactl list short sinks | grep RUNNING | cut -f1`
-#bindcode 123 exec --no-startup-id amixer set $sink 5%+ unmute -q
-#bindcode 122 exec --no-startup-id amixer set $sink 5%- unmute -q
 bindcode 123 exec --no-startup-id amixer set Master 5%+ unmute -q
 bindcode 122 exec --no-startup-id amixer set Master 5%- unmute -q
 bindcode 121 exec --no-startup-id amixer set Master toggle -q
-#bindcode 121 exec --no-startup-id pactl set-sink-mute Master toggle
 
+# clementine Remote control
+#bindsym XF86AudioPlay exec clementine_CTRL.py pause
+#bindsym Shift+XF86AudioPlay exec clementine_CTRL.py stop
+#bindsym Control+XF86AudioPlay exec clementine_CTRL.py osd
+#bindsym Control+XF86AudioRaiseVolume exec clementine_CTRL.py next
+#bindsym Control+XF86AudioLowerVolume exec clementine_CTRL.py previous
 
 # split in horizontal orientation
 bindsym $mod+h split h
-
-# launch firefox
-bindsym $mod+x exec --no-startup-id firefox
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -109,34 +106,34 @@ bindsym $mod+BackSpace focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindcode $mod+d focus child
+#bindcode $mod+à focus child
 
 # jump to last urgent window
 bindsym $mod+g [urgent=latest] focus
 
 # switch to workspace
-bindsym $mod+multiply workspace $WS1
-bindsym $mod+w workspace $WS2
-bindsym $mod+quotedbl workspace $WS3
+bindsym $mod+multiply workspace   $WS1
+bindsym $mod+w workspace          $WS2
+bindsym $mod+quotedbl workspace   $WS3
 bindsym $mod+apostrophe workspace $WS4
-bindsym $mod+grave workspace $WS5
+bindsym $mod+grave workspace      $WS5
 bindsym $mod+underscore workspace $WS6
-bindsym $mod+ccedilla workspace $WS7
-bindsym $mod+colon workspace $WS8
-bindsym $mod+semicolon workspace $WS9
+bindsym $mod+ccedilla workspace   $WS7
+bindsym $mod+colon workspace      $WS8
+bindsym $mod+semicolon workspace  $WS9
 bindsym $mod+VoidSymbol workspace $WS10
 
 # move focused container to workspace
-bindsym $mod+Shift+multiply move container to workspace $WS1
-bindsym $mod+Shift+w move container to workspace $WS2
-bindsym $mod+Shift+quotedbl move container to workspace $WS3
-bindsym $mod+Shift+apostrophe move container to workspace $WS4
-bindsym $mod+Shift+grave move container to workspace $WS5
-bindsym $mod+Shift+underscore move container to workspace $WS6
-bindsym $mod+Shift+ccedilla move container to workspace $WS7
-bindsym $mod+Shift+colon move container to workspace $WS8
-bindsym $mod+Shift+semicolon move container to workspace $WS9
-bindsym $mod+Shift+VoidSymbol move container to workspace $WS10
+bindsym $mod+Shift+multiply move container to workspace    $WS1
+bindsym $mod+Shift+w move container to workspace           $WS2
+bindsym $mod+Shift+quotedbl move container to workspace    $WS3
+bindsym $mod+Shift+apostrophe move container to workspace  $WS4
+bindsym $mod+Shift+grave move container to workspace       $WS5
+bindsym $mod+Shift+underscore move container to workspace  $WS6
+bindsym $mod+Shift+ccedilla move container to workspace    $WS7
+bindsym $mod+Shift+colon move container to workspace       $WS8
+bindsym $mod+Shift+semicolon move container to workspace   $WS9
+bindsym $mod+Shift+VoidSymbol move container to workspace  $WS10
 
 # reload the configuration file
 bindsym $mod+Shift+X reload
@@ -169,9 +166,7 @@ bindsym $mod+p mode "resize"
 # finds out, if available)
 bar {
   position top
-  #status_command ping google.com
- 	status_command $HOME/.i3/bin/conky-i3bar
-  # status_command i3status
+ 	status_command $HOME/.i3/conky/conky-i3bar
 }
 
 
@@ -182,6 +177,9 @@ exec --no-startup-id "devmon --no-gui"
 ## Background
 exec --no-startup-id feh --bg-scale $HOME/.i3/wallpaper/Stained-Glass-Vector-Lines.jpg
 
+## hide mouse cursor when not used
+exec_always --no-startup-id unclutter -idle 1 -jitter 2 -root &
+
 ## Keyboard layout
 exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
 exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
@@ -190,7 +188,7 @@ exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
 exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
 
 ## JDownloader
-exec --no-startup-id i3-msg 'workspace $WS10; exec jdownloader'
+exec --no-startup-id i3-msg 'workspace $WS10; exec /bin/JDownloader'
 
 ## Terminal
-exec --no-startup-id i3-msg 'workspace $WS3; exec urvxt'
+exec --no-startup-id i3-msg 'workspace $WS3; exec urxvt'
