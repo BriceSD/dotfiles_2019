@@ -1,8 +1,10 @@
 out_to_x no
 out_to_console yes
+override_utf8_locale yes
 short_units yes
 update_interval 1
-
+use_xft yes
+xftfont i3barsymbols:size=10
 TEXT
 
 [\
@@ -40,11 +42,11 @@ TEXT
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Wifi
-{ "full_text" : "Wifi", "color" : "\#545454", "separator":false,"separator_block_width":6},\
+{ "full_text" : "\uE004", "color" : "\#545454", "separator":false,"separator_block_width":6},\
 { "full_text" : "${wireless_essid wlp4s0} ${wireless_link_qual_perc wlp4s0}%" , "color" : "\#909737", "separator":false,"separator_block_width":6},\
 
 # Download:
-{"full_text":"DOWN","color":"\#545454","separator":false,"separator_block_width":6},\
+{"full_text":"\uE005","color":"\#545454","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${downspeedf wlp4s0}<1000}${downspeed wlp4s0}","color":"\#909737","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${downspeedf wlp4s0}<3000}${downspeed wlp4s0}","color":"\#b27d12","separator":false,"separator_block_width":6},\
@@ -53,7 +55,7 @@ TEXT
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Upload:
-{"full_text":"UP","color":"\#545454","separator":false,"separator_block_width":6},\
+{"full_text":"\uE006","color":"\#545454","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${upspeedf wlp4s0}<300}${upspeed wlp4s0}","color":"\#909737","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf wlp4s0}<800}${upspeed wlp4s0}","color":"\#b27d12","separator":false,"separator_block_width":6},\
@@ -75,7 +77,7 @@ TEXT
 #{"full_text":"${endif}${endif}${endif}"},\
 
 # Battery:
-{"full_text":"BAT","color":"\#545454","separator":false,"separator_block_width":6},\
+{"full_text":"\uE007","color":"\#545454","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${battery_percent}<30}${battery_percent}%","color":"\#802828","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${battery_percent}<70}${battery_percent}%","color":"\#b27d12","separator":false,"separator_block_width":6},\
@@ -92,10 +94,8 @@ TEXT
 {"full_text":"${execi 1 amixer sget Master,0 | egrep -o '([0-9]+%|\[(on|off)\])' | sed ':a;N;$!ba;s/\n/ /g'}","color":"\#909737","separator":false},\
 
 # Music
-{"full_text":"${execi 10 ~/.i3/conky/conky-clementine}","color":"\#909737","separator":false},\
-#{"full_text":"Title ${execi 1 conkyClementine --nounknownoutput -m 27 -d AR}","color":"\#909737","separator":false},\
-#Artist:${color b26f7a}${mpd_artist}${color 9c77b2} * ${color 7086b2}
-#Album:${color b26f7a}${mpd_album}${color 9c77b2}
+{"full_text":"\ue001","font":"i3barsymbols","color":"\#545454","separator":false,"separator_block_width":6},\
+{"full_text":"${execi 1 ~/.i3/conky/conky-clementine}","color":"\#909737","separator":false},\
 
 # Date:
 {"full_text":"|","color":"\#545454","separator":false,"separator_block_width":6},\
