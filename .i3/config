@@ -26,7 +26,7 @@ set $WS5 5
 set $WS6 6
 set $WS7 7
 set $WS8 8: Music
-set $WS9 9
+set $WS9 9: Mail
 set $WS10 10: DL
 
 # assigns
@@ -44,6 +44,9 @@ bindsym $mod+x exec --no-startup-id firefox
 
 ## launch intellij idea
 bindsym $mod+y exec --no-startup-id sh $HOME/IntelliJIdea/bin/idea.sh
+#
+## launch pycharm
+bindsym $mod+agrave exec --no-startup-id sh $HOME/Pycharm/bin/pycharm.sh
 
 ## launch urxvt (terminal)
 bindsym $mod+Return exec urxvt
@@ -51,6 +54,15 @@ bindsym $mod+Return exec urxvt
 # Navigation
 ## Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+## enable workspace back and forth
+workspace_auto_back_and_forth yes
+
+## use d to switch back and forth
+bindsym $mod+d workspace back_and_forth
+
+##
+bindsym $mod+Shift+d move container to workspace back_and_forth; workspace back_and_forth
 
 ## kill focused window
 bindsym $mod+Shift+j kill
@@ -161,6 +173,39 @@ mode "resize" {
 }
 
 bindsym $mod+p mode "resize"
+
+# This is awesome, see : http://www.slackword.net/?p=657
+mode "focused" {
+
+                # hardcoded focus keybindings
+                bindsym i [class="(?i)firefox"] focus
+                bindsym e [class="(?i)thunderbird"] focus
+                bindsym u [class="(?i)zathura"] focus
+
+                # keybindings for marking and jumping to clients
+                bindsym a exec i3-input -F 'mark %s' -P 'Mark name: '
+                bindsym comma exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
+
+                # Assign marks to keys 1-5
+                bindsym Shift+multiply mark mark1
+                bindsym Shift+w mark mark2
+                bindsym Shift+quotedbl mark mark3
+                bindsym Shift+apostrophe mark mark4
+                bindsym Shift+grave mark mark5
+
+                # Jump to clients marked 1-5
+                bindsym multiply [con_mark="mark1"] focus
+                bindsym w [con_mark="mark2"] focus
+                bindsym quotedbl [con_mark="mark3"] focus
+                bindsym apostrophe [con_mark="mark4"] focus
+                bindsym grave [con_mark="mark5"] focus
+
+                # Exit to the default mode
+                bindsym Return mode "default"
+                bindsym Escape mode "default"
+}
+
+bindsym $mod+n mode "focused"
 
 # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
 bar {

@@ -106,8 +106,10 @@ xkb_symbols "jeop" {
 //  key <VOL+> { [ XF86AudioRaiseVolume ] };
 
   key <I253> { type[group1] = "ONE_LEVEL", [ Tab ] };
+  key <I252> { type[group1] = "ONE_LEVEL", [ space ] };
+  key <I251> { type[group1] = "ONE_LEVEL", [ Return ] };
 
-  key <RCTL>           { [space] };
+  key <RCTL>           { [Return] };
 };
 
 partial alphanumeric_keys
@@ -129,6 +131,14 @@ partial alphanumeric_keys
        key <AC08> {overlay1=<I212>};
        key <AC09> {overlay1=<I214>};
 
+       key <I221> { type[group1] = "ONE_LEVEL", [ Home ] };
+       key <AD06> {overlay1=<I221>};
+       key <I222> { type[group1] = "ONE_LEVEL", [ Page_Down ] };
+       key <AD07> {overlay1=<I222>};
+       key <I223> { type[group1] = "ONE_LEVEL", [ Page_Up ] };
+       key <AD08> {overlay1=<I223>};
+       key <I224> { type[group1] = "ONE_LEVEL", [ End ] };
+       key <AD09> {overlay1=<I224>};
 
        // ctrl-x
        key <I215> { [ x ] };
@@ -146,7 +156,8 @@ partial alphanumeric_keys
 
 partial modifier_keys
 xkb_symbols "jeopPETM_Modifiers" {
-  modifier_map Mod1    { Alt_L, Alt_R, <LWIN>, <LEFT> };                              //Mod1 = Alt
+ // modifier_map Mod1    { Alt_L, Alt_R, <LWIN>, <LEFT>, <RTRN> };                      //Mod1 = Alt
+  modifier_map Mod1    { Alt_L, Alt_R, <LWIN>, <LEFT> };                      //Mod1 = Alt
   modifier_map Shift   { Shift_L, Shift_R, <LALT>, <RALT> };                          //Shift = Level2 = Shift
   modifier_map Control { Control_L, Control_R, <MENU>, <HOME>, <UP>, <I172> };        //Control = Control
   modifier_map Mod5    { ISO_Level3_Shift, <LFSH>, <AC11>};                           //Mod5 = Level3 = AltGr
@@ -156,6 +167,7 @@ xkb_symbols "jeopPETM_Modifiers" {
   key <HOME>           { [Control_R] };
   key <UP>             { [Control_R] };
   key <MENU>           { [Control_L] };
+  //key <RTRN>           { [Alt_L] };
   key <LWIN>           { [Alt_L] };
   key <LEFT>           { [Alt_R] };
   key <DOWN>           { [Alt_R] };

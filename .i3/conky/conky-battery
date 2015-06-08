@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+import os, math
+from decimal import *
+
+rate = 0.0
+batteries = os.listdir("/sys/class/power_supply")
+output = "No Data"
+
+for battery in batteries:
+    if "BAT" in battery:
+        status = open("/sys/class/power_supply/%s/status" % (battery)).read().strip("\n")
+        if "Discharging" in status:
+            energy = Decimal(open("/sys/class/power_supply/%s/charge_now" % (battery)).read())
+            power = Decimal(open("/sys/class/power_supply/%s/current_now" % (battery)).read())
+            if power > 0:
+                hours = math.floor(energy / power)
+                minutes = math.floor(((energy % power) / power) * 60)
+                output = "%.0f hours %.0f minutes" % (hours, minutes)
+            else:
+                output = "Gathering"
+        else:
+            output = status
+print (output)
