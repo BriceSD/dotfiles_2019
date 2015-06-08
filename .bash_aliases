@@ -10,11 +10,7 @@ alias mouse='gsettings set org.gnome.settings-daemon.plugins.cursor active false
 
 # Neovim
 alias v='nvim'
-alias n='nvim'
-alias nv='nvim'
 alias sv='sudoedit'
-alias sn='sudoedit'
-alias snv='sudoedit'
 
 # Pacman
 alias pS='sudo pacman -S'
@@ -35,3 +31,6 @@ alias gx='gitx --all'
 # Keyboard layout
 alias jeopXcape="~/.xkb/jeopPETMxCape.sh"
 alias jeop='xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY'
+
+# TLP
+alias tlpedit="sudoedit /etc/default/tlp"
