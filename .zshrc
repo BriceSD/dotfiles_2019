@@ -3,6 +3,35 @@ export ZSH=/home/brice/.oh-my-zsh
 
 source ~/.bash_aliases
 
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
+
+# check if there's no init script
+if ! zgen saved; then
+    echo "Creating a zgen save"
+
+    zgen oh-my-zsh
+
+    zgen load jimmijj/zsh-syntax-highlighting
+
+    # autosuggestions should be loaded last
+    zgen load tarruda/zsh-autosuggestions
+
+    # plugins
+    zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/sudo
+    zgen oh-my-zsh plugins/command-not-found
+#    zgen load zsh-users/zsh-syntax-highlighting
+
+    # completions
+    zgen load zsh-users/zsh-completions src
+
+    # theme
+    zgen oh-my-zsh themes/arrow
+
+    # save all to init script
+    zgen save
+fi
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -28,7 +57,7 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -47,7 +76,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search zsh-syntax-highlighting)
+#plugins=(git web-search zsh-syntax-highlighting)
 
 # Allows editing the command line with an external editor
 zle -N edit-command-line
@@ -58,8 +87,8 @@ if [[ ! -n "$ZSHRUN" ]]; then
     # Fish shell like syntax highlighting for Zsh:
     # git clone git://github.com/BriceSD/zsh-syntax-highlighting ~/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     #   $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-    if [[ -d $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/ ]]; then
-        source $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    if [[ -d $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/ ]]; then
+        source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
         ZSH_HIGHLIGHT_HIGHLIGHTERS+=( main brackets pattern )
     fi
 fi
@@ -72,6 +101,11 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
 
+# Enable autosuggestions automatically.
+zle-line-init() {
+    zle autosuggest-start
+}
+zle -N zle-line-init
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
