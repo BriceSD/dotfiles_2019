@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/brice/color-schemes/script'
-let g:netrw_dirhist_2='/home/brice/.nvim'
-let g:netrw_dirhist_3='/home/brice/.tmux'
-let g:netrw_dirhist_4='/usr/share/X11/xkb/symbols'
-let g:netrw_dirhist_5='/home/brice'
-let g:netrw_dirhist_6='/home/brice/Code/Java/Katas/src'
-let g:netrw_dirhist_7='/home/brice/Code/Java/Katas/src/BowlingGame'
-let g:netrw_dirhist_8='/home/brice/Code/Java/Katas/src'
-let g:netrw_dirhist_9='/home/brice/Downloads/Images'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/brice/dotfiles/.xkb/symbols'
