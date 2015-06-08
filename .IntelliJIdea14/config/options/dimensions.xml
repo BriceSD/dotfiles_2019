@@ -1,12 +1,12 @@
 <application>
   <component name="DimensionService">
-    <location key="FileChooserDialogImpl.0.0.1920.1080" x="749" y="370" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="747" y="350" />
     <location key="WELCOME_SCREEN.0.0.1920.1080" x="958" y="230" />
-    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="700" y="665" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="698" y="645" />
     <location key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" x="566" y="226" />
     <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" x="808" y="435" />
-    <location key="SettingsEditor.0.0.1920.1080" x="960" y="46" />
-    <location key="new project wizard.0.0.1920.1080" x="606" y="191" />
+    <location key="SettingsEditor.0.0.1920.1080" x="-2" y="13" />
+    <location key="new project wizard.0.0.1920.1080" x="604" y="171" />
     <location key="#Updates.0.0.1920.1080" x="718" y="475" />
     <location key="StructurePopup.0.0.1920.1080" x="757" y="354" />
     <location key="com.intellij.ide.util.TipDialog.0.0.0.0" x="0" y="713" />
@@ -15,7 +15,7 @@
     <size key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" width="824" height="664" />
     <size key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" width="350" height="226" />
     <size key="SettingsEditor.0.0.1920.1080" width="960" height="1034" />
-    <size key="new project wizard.0.0.1920.1080" width="754" height="714" />
+    <size key="new project wizard.0.0.1920.1080" width="822" height="714" />
     <size key="#Updates.0.0.1920.1080" width="473" height="220" />
     <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1920" height="211" />
     <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1920" height="211" />

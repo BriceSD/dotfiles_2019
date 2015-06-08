@@ -2,6 +2,7 @@
   <component name="RecentProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/Code/Java/test" />
         <option value="$USER_HOME$/Code/Java/Katas" />
         <option value="C:\Code\Java\HeadFirst" />
         <option value="C:\Users\KaliMist\Downloads\extracted\CleanCode\E27 - Strategy &amp; Template Method Patterns\Clean-Code-27-Extras\projects\Application" />
@@ -15,6 +16,12 @@
         <option value="C:\Users\KaliMist\Downloads\extracted\CleanCode\EP27\Clean-Code-27-Extras\projects\Application" />
       </list>
     </option>
-    <option name="lastProjectLocation" value="C:/Code/Java" />
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Code/Java/test" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Code/Java/test" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Code/Java" />
   </component>
 </application>
