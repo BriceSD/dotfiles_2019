@@ -7,10 +7,15 @@ endif
 
 syntax on                         " show syntax highlighting
 filetype plugin indent on
+set nocompatible                  " don't need to be compatible with old vim
 set ts=2                          " set indent to 2 spaces
 set shiftwidth=2
+set noautoindent                  " auto indent
+set nosmartindent                 " more inteligent auto-indenting
+set mousehide                     " hide the mouse when typing
 set expandtab                     " use spaces, not tab characters
-set nocompatible                  " don't need to be compatible with old vim
+set smarttab                      " tab and backspace are smart
+set backspace=indent,eol,start    " backspace over all kinds of things
 set relativenumber                " show relative line numbers
 set number                        " and the number of current line
 set showmatch                     " show bracket matches
@@ -18,10 +23,13 @@ set ignorecase                    " ignore case in search
 set hlsearch                      " highlight all search matches
 set cursorline                    " highlight current line
 set smartcase                     " pay attention to case when caps are used
+set linebreak                     " wrap at 'breakat' instead of last char
 set virtualedit=block             " Let cursor move past the last char in <C-V> mode
 set incsearch                     " show search results as I type
 set ttimeoutlen=100               " decrease timeout for faster insert with 'O'
-set vb                            " enable visual bell (disable audio bell)
+set cmdheight=1					          " command line two lines high
+set updatecount=100				        " flush file to disk every 100 chars
+set complete=.,w,b,u,U,t,i,d	    " do lots of scanning on tab completion
 set ruler                         " show row and column in footer
 set scrolloff=2                   " minimum lines above/below cursor
 set laststatus=2                  " always show status bar
@@ -29,13 +37,17 @@ set nofoldenable                  " disable code folding
 set clipboard+=unnamedplus        " use the system clipboard
 set wildmenu                      " enable bash style tab completion
 set wildmode=list:longest,full
-set showcmd                       " Show (partial) command in status line.
-set nocompatible
-set mousehide                     " hide mouse when keyboard is use
+set showcmd                       " Show (partial) command in status line (the one we are typing)
+set magic                         " Enable the 'magic' (see \v and \V while searching regex)"
+set noerrorbells                  " no error bells please
+set novisualbell                  " Disable ALL bells
 set formatprg=par\ -w80           " use Par to justify texts (width of 80), need to install par manually
 "let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " use true color in nvim
 runtime macros/matchit.vim        " use % to jump between start/end of methods
 
+filetype on						            " Enable filetype detection
+filetype indent on				        " Enable filetype-specific indenting
+filetype plugin on				        " Enable filetype-specific plugins
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Scheme
@@ -99,6 +111,43 @@ nnoremap <A-t> <C-w>j
 nnoremap <A-s> <C-w>k
 nnoremap <A-r> <C-w>l
 
+" Turn on omni-completion
+set omnifunc=syntaxcomplete#Complete
+
+" when omnicompletion is visible, map 'enter' as selector key
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Omnicomplete as Ctrl+Space
+inoremap <Nul> <C-x><C-o>
+" Also map user-defined omnicompletion as Ctrl+k
+inoremap <C-k> <C-x><C-u>" Y yanks from cursor to $
+
+" set the form of popup
+set completeopt=longest,menuone
+" -- configs --
+let OmniCpp_MayCompleteDot = 1		" autocomplete with .
+let OmniCpp_MayCompleteArrow = 1	" autocomplete with ->
+let OmniCpp_MayCompleteScope = 1	" autocomplete with ::
+let OmniCpp_SelectFirstItem = 2		" select first item (but don't insert)
+let OmniCpp_NamespaceSearch = 2		" search namespaces in this and included files
+
+" Y yanks from cursor to $
+map Y y$
+
+" If I forgot to sudo vim a file, do that with :w!!
+cmap w!! %!sudo tee > /dev/null %
+
+" Showmarks
+let showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let g:showmarks_enable = 1
+" For marks a-z
+highlight ShowMarksHLl gui=bold ctermbg=LightBlue ctermfg=Blue
+" For marks A-Z
+highlight ShowMarksHLu gui=bold ctermbg=LightRed ctermfg=DarkRed
+" For all other marks
+highlight ShowMarksHLo gui=bold ctermbg=LightYellow ctermfg=DarkYellow
+" For multiple marks on the same line.
+highlight ShowMarksHLm gui=bold ctermbg=LightGreen ctermfg=DarkGreen
 
 " Use the repeat operator with a visual selection
 " This is useful for performing an edit on a single line, then highlighting a
@@ -115,6 +164,7 @@ let g:gitgutter_realtime=1
 
 " Gundo settings
 nnoremap <F7> :GundoToggle<cr>
+
 " Enable persistent undo so that undo history persists across vim sessions
 set undofile
 set undodir=~/.nvim/undo
@@ -203,6 +253,9 @@ call vundle#begin()
 
   " Show syntax highlighting groups for word under cursor
   Plugin 'gerw/vim-HiLinkTrace'
+
+  " Give a visual aid to navigate marks, by displaying them as signs (obviously needs the +signs feature).
+  Plugin 'vim-scripts/ShowMarks'
 
   " check syntax
   Plugin 'scrooloose/syntastic'

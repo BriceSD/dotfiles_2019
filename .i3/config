@@ -64,6 +64,12 @@ bindsym $mod+d workspace back_and_forth
 ##
 bindsym $mod+Shift+d move container to workspace back_and_forth; workspace back_and_forth
 
+##
+bindsym $mod+b exec --no-startup-id quickswitch.py
+
+##
+bindsym $mod+Shift+b exec --no-startup-id quickswitch.py -m
+
 ## kill focused window
 bindsym $mod+Shift+j kill
 
@@ -206,6 +212,8 @@ mode "focused" {
 }
 
 bindsym $mod+n mode "focused"
+
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
 bar {
