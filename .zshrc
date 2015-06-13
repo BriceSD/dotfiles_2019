@@ -20,14 +20,14 @@ if ! zgen saved; then
     # plugins
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/sudo
+    zgen oh-my-zsh plugins/web-search
     zgen oh-my-zsh plugins/command-not-found
-#    zgen load zsh-users/zsh-syntax-highlighting
 
     # completions
     zgen load zsh-users/zsh-completions src
 
     # theme
-    zgen oh-my-zsh themes/arrow
+    #zgen oh-my-zsh themes/arrow
 
     # save all to init script
     zgen save
@@ -76,22 +76,23 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-#plugins=(git web-search zsh-syntax-highlighting)
+#plugins=(git web-search)
 
 # Allows editing the command line with an external editor
 zle -N edit-command-line
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=( main brackets pattern )
 
 # Set up prompt
-if [[ ! -n "$ZSHRUN" ]]; then
+#if [[ ! -n "$ZSHRUN" ]]; then
 
     # Fish shell like syntax highlighting for Zsh:
     # git clone git://github.com/BriceSD/zsh-syntax-highlighting ~/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     #   $HOME/dotfiles/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-    if [[ -d $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/ ]]; then
-        source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-        ZSH_HIGHLIGHT_HIGHLIGHTERS+=( main brackets pattern )
-    fi
-fi
+#    if [[ -d $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/ ]]; then
+#        source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#        ZSH_HIGHLIGHT_HIGHLIGHTERS+=( main brackets pattern )
+#    fi
+#fi
 
 export EDITOR="nvim"
 export VISUAL=$EDITOR
@@ -111,14 +112,14 @@ zle -N zle-line-init
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='nvim'
-# else
-#   export EDITOR='nvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='nvim'
+ else
+   export EDITOR='nvim'
+ fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+ export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
