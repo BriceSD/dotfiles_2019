@@ -14,7 +14,9 @@ alias sv='sudoedit'
 
 # Pacman
 alias pS='sudo pacman -S'
+alias pi='sudo pacman -S'
 alias yS='yaourt -S'
+alias yi='yaourt -S'
 
 # Git
 alias gs='git status '
