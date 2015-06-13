@@ -11,21 +11,45 @@ URxvt.transparent: false
 URxvt*.shading:    10
 
 ! Meta modifier for keybindings
-!URxvt.modifier: super
+URxvt.modifier: alt
 
 !! perl extensions
-URxvt.perl-ext:             default,url-select,clipboard
+URxvt.perl-ext:             default,url-picker,clipboard,keyboard-select-bepo
 
-! url-select (part of urxvt-perls package)
-URxvt.keysym.M-u:           perl:url-select:select_next
-URxvt.url-select.autocopy:  true
-URxvt.url-select.button:    2
-URxvt.url-select.launcher:  firefox
-URxvt.url-select.underline: true
+! keyboard-select-bepo
+! see : https://github.com/muennich/urxvt-perls
+! I adapted it to my own keyboard layout
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
 
-! Nastavuje kopirovani
-URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
-URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+! url-picker
+! see : https://bitbucket.org/sterlingcamden/urlpicker/src
+URxvt.keysym.M-e:    perl:url-picker
+URxvt.urlLauncher:			firefox
+!URxvt.url-picker.input.backgroundColor	Bg color for numbers typed
+!URxvt.url-picker.input.foregroundColor	Fg color for numbers typed
+!URxvt.url-picker.label.backgroundColor	Bg color for numbered labels
+!URxvt.url-picker.label.foregroundColor	Fg color for numbered labels
+!URxvt.url-picker.launcher		Browser override
+!URXVT.url-picker.order			"descending" numbers in reverse
+!URxvt.url-picker.prompt.backgroundColor	Bg color for "Follow:" prompt
+!URxvt.url-picker.prompt.foregroundColor	Fg color for "Follow:" prompt
+!URxvt.url-picker.status.backgroundColor	Bg color for status messages
+!URxvt.url-picker.status.foregroundColor	Fg color for status messages
+
+! clipboard
+! see : https://github.com/muennich/urxvt-perls
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+! xclip as clipboard
+! see : https://github.com/muennich/urxvt-perls
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+! automatically update the clipboard whenever the PRIMARY selection changes
+URxvt.clipboard.autocopy: true
 
 ! disable the stupid ctrl+shift 'feature'
 URxvt.iso14755:    false
@@ -37,6 +61,9 @@ URxvt*background: #2B2B2B
 URxvt*foreground: #A9B7C6
 
 URxvt*colorUL: #86A2b0
+
+URxvt*color16: #2B2B2B
+URxvt*color17: #A9B7C6
 
 ! black
 URxvt*color0  : #2E3436
