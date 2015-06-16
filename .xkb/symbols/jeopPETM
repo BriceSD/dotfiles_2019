@@ -12,10 +12,10 @@
   //║ @   ║ j · +    │ é ´ %    │ o œ <    │ p ≤ <=   │ è `      ║          ║ ˆ ! !  ! │ v   7    │ d   8    │ l   9    │ b ˜ &    │ z ə      │ ⇒        ║   ⇤║
   //╠═════╣──────────┼──────────┼──────────┼──────────┼──────────╠══════════╣──────────┼──────────┼──────────┼──────────┼──────────┼──────────╔══════════╬════╣
   //║     ║ A • -=   │ U Ù =    │ E € )    │ I ˙ }    │ ,  ̛ ,    ║          ║ C \ /    │ T        │ S ß      │ R        │ N        │   Alt    ║          ║ ⇪  ║
-  //║Alt  ║ a — -    │ u ù =    │ e ¤ (    │ i  ̈ {    │ ,   ,    ║          ║ c / /    │ t $ 0  $ │ s # 1  # │ r ~ 2  ~ │ n   3    │    Gr    ║  Unlock  ║  AC║
+  //║Alt  ║ a — -    │ u ù =    │ e ¤ (    │ i  ̈ {    │ ,   ,    ║          ║ c / /    │ t $ 0  ^ │ s # 1  # │ r ~ 2  ~ │ n   3    │    Gr    ║  Unlock  ║  AC║
   //║ gr  ║──────────┼──────────┼──────────┼──────────┼──────────║  ⏎  esc  ║──────────┼──────────┼──────────┼──────────┼──────────┼──────────║          ╠════╣
   //║     ║ À – *=   │ Y ≠      │ X   ]    │ .   .    │ K        ║          ║ ’ ? ?  ? │ Q        │ G        │ H        │ M ‡ ||   │ F        ║          ║www ║
-  //║     ║ à – *    │ y ≃      │ x   [    │ . … .    │ k        ║          ║ ’ ? ?  ? │ q   4    │ g µ 5    │ h ^ 6    │ m † |  ¦ │ f        ║          ║ ⌫  ║
+  //║     ║ à – *    │ y ≃      │ x   [    │ . … .    │ k        ║          ║ ’ ? ?  ? │ q   4    │ g µ 5    │ h   6    │ m † |  ¦ │ f        ║          ║ ⌫  ║
   //╠═════╬══════════╦══════════╦══════════╦══════════╧══════════╩══════════╩══════════╧══════════╦══════════╦══════════╦══════════╦══════════╬══════════╬════╣
   //║Over-║   Ctrl   ║          ║  Level5  ║             Espace insécable                         ║  Level5  ║   Ctrl   ║   Ctrl   ║ Overlay  ║          ║ ⇞  ║
   //║ lay ║          ║          ║    Tab   ║                                                      ║    Tab   ║          ║          ║          ║  Lock    ║  bk║
@@ -80,7 +80,7 @@ xkb_symbols "jeop" {
   key <AC05>   { [ comma, comma, comma, dead_breve, comma, comma, comma, comma ] };
 
   key <AC06>   { [ c, C, slash, backslash, slash, slash, VoidSymbol, VoidSymbol ] };
-  key <AC07>   { [ t, T, dollar, VoidSymbol, 0, VoidSymbol, dollar, VoidSymbol ] };
+  key <AC07>   { [ t, T, dollar, VoidSymbol, 0, VoidSymbol, asciicircum, VoidSymbol ] };
   key <AC08>   { [ s, S, numbersign, ssharp, 1, VoidSymbol, numbersign, VoidSymbol ] };
   key <AC09>   { [ r, R, asciitilde, VoidSymbol, 2, VoidSymbol, asciitilde, VoidSymbol ] };
   key <AC10>   { [ n, N, VoidSymbol, VoidSymbol, 3, VoidSymbol, VoidSymbol, VoidSymbol ] };
@@ -96,7 +96,7 @@ xkb_symbols "jeop" {
   key <AB06>   { [ rightsinglequotemark, rightsinglequotemark, question, question, question, question, question, question ] };
   key <AB07>   { [ q, Q, VoidSymbol, VoidSymbol, 4, VoidSymbol, VoidSymbol, VoidSymbol ] };
   key <AB08>   { [ g, G, mu, VoidSymbol, 5, VoidSymbol, VoidSymbol, VoidSymbol ] };
-  key <AB09>   { [ h, H, asciicircum, VoidSymbol, 6, VoidSymbol, VoidSymbol, VoidSymbol ] };
+  key <AB09>   { [ h, H, VoidSymbol, VoidSymbol, 6, VoidSymbol, VoidSymbol, VoidSymbol ] };
   key <AB10>   { [ m, M, dagger, doubledagger, bar, VoidSymbol, VoidSymbol, brokenbar] };
   key <AB11>   { [ f, F, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol, VoidSymbol ] };
 
