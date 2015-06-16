@@ -1,4 +1,16 @@
 .IntelliJIdea14/system
 .IntelliJIdea14/config/tasks
+.IntelliJIdea14/config/options/dimensions.xml
+.IntelliJIdea14/config/options/ignore.xml
+.IntelliJIdea14/config/options/options.xml
+.IntelliJIdea14/config/options/statistics.application.usages.xml
+.IntelliJIdea14/config/options/updates.xml
+.IntelliJIdea14/config/options/window.manager.xml
+.IntelliJIdea14/config/plugins/availables.xml
+.IntelliJIdea14/config/plugins/extensions.xml
+
+
+
+
 *.swp
 *~
