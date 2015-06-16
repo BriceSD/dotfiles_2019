@@ -1,5 +1,7 @@
 ! urxvt
 
+
+
 URxvt*geometry:    115x40
 URxvt*font:        xft:Source\ Code\ Pro:Regular:pixelsize=17:antialias=true:hinting=true
 URxvt*boldFont:    xft:Source\ Code\ Pro:bold:pixelsize=17:antialias=true:hinting=true
@@ -20,8 +22,9 @@ URxvt.perl-ext:             default,url-picker,clipboard,keyboard-select-bepo
 ! see : https://github.com/muennich/urxvt-perls
 ! I adapted it to my own keyboard layout
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-
+URxvt.keysym.M-f: perl:keyboard-select:search
+URxvt.searchable-scrollback: CM-s
+!URxvt.keysym.M-s: searchable-scrollback:start
 
 ! url-picker
 ! see : https://bitbucket.org/sterlingcamden/urlpicker/src
@@ -40,9 +43,9 @@ URxvt.urlLauncher:			firefox
 
 ! clipboard
 ! see : https://github.com/muennich/urxvt-perls
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.M-v:   perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-y:   perl:clipboard:copy
+URxvt.keysym.M-p:   perl:clipboard:paste
+URxvt.keysym.M-C-p: perl:clipboard:paste_escaped
 
 ! xclip as clipboard
 ! see : https://github.com/muennich/urxvt-perls
@@ -62,8 +65,8 @@ URxvt*foreground: #A9B7C6
 
 URxvt*colorUL: #86A2b0
 
-URxvt*color16: #2B2B2B
-URxvt*color17: #A9B7C6
+!URxvt*color16: #2B2B2B
+!URxvt*color17: #A9B7C6
 
 ! black
 URxvt*color0  : #2E3436
