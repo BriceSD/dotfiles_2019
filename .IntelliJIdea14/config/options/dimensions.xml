@@ -2,7 +2,7 @@
   <component name="DimensionService">
     <location key="FileChooserDialogImpl.0.0.1920.1080" x="747" y="350" />
     <location key="WELCOME_SCREEN.0.0.1920.1080" x="958" y="230" />
-    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="698" y="645" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="696" y="625" />
     <location key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" x="566" y="226" />
     <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" x="808" y="435" />
     <location key="SettingsEditor.0.0.1920.1080" x="-2" y="13" />
