@@ -1,13 +1,3 @@
-# Apt
-alias agi='sudo apt-get install'
-alias agu='sudo apt-get update'
-alias agg='sudo apt-get upgrade'
-alias agd='sudo apt-get dist-upgrade'
-alias maj='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
-
-# i3 mouse bug
-alias mouse='gsettings set org.gnome.settings-daemon.plugins.cursor active false'
-
 # Neovim
 alias v='nvim'
 alias sv='sudoedit'
@@ -27,6 +17,7 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+alias ggpush='git push origin master'
 #alias got='git '
 #alias get='git '
 
@@ -36,3 +27,10 @@ alias jeop='xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY'
 
 # TLP
 alias tlpedit="sudoedit /etc/default/tlp"
+
+# Pandoc
+alias pandoc="~/.cabal/bin/pandoc"
+alias mdtopdf="~/.cabal/bin/pandoc --latex-engine=lualatex --template ~/.pandoc/pandoc-templates/default.latex --number-sections --toc"
+
+# Ranger
+alias r="ranger"
