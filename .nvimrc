@@ -399,3 +399,10 @@ let g:ycm_min_num_of_chars_for_completion = 2
 
 " set the form of popup
 set completeopt=longest,menuone
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                               Pandoc module                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
+let g:pandoc#filetypes#pandoc_markdown = 0
