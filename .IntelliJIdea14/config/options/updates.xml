@@ -12,12 +12,6 @@
       <item value="IDEA14.1" />
       <item value="IDEA_14_1_EAP" />
     </knownUpdateChannels>
-    <outdatedPlugins>
-      <item value="IdeaVIM" />
-      <item value="PlantUML integration" />
-      <item value="org.intellij.scala" />
-      <item value="com.jetbrains.php" />
-    </outdatedPlugins>
     <option name="LAST_TIME_CHECKED" value="1428709238122" />
     <option name="LAST_BUILD_CHECKED" value="IU-141.178" />
   </component>

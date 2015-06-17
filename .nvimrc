@@ -93,6 +93,8 @@ endif
 syntax on                         " show syntax highlighting
 set nocompatible                  " don't need to be compatible with old vim
 set ts=2                          " set indent to 2 spaces
+set list                          " Shows invisible characters
+set listchars=tab:▸\ ,eol:¬
 set autoread                      "Always reload buffer when external changes detected
 set t_Co=256
 set shiftwidth=2
@@ -377,6 +379,9 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Turn on omni-completion
 set omnifunc=syntaxcomplete#Complete
+
+" Autocomplete with dictionary words when spell check is on
+set complete+=kspell
 
 let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
