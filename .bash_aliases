@@ -29,7 +29,7 @@ alias jeop='xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY'
 alias tlpedit="sudoedit /etc/default/tlp"
 
 # Pandoc
-alias pandoc="~/.cabal/bin/pandoc"
+#alias pandoc="~/.cabal/bin/pandoc"
 alias mdtopdf="~/.cabal/bin/pandoc --latex-engine=lualatex --template ~/.pandoc/pandoc-templates/default.latex --number-sections --toc"
 
 # Ranger
