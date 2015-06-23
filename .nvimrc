@@ -10,6 +10,8 @@ call plug#begin('~/.nvim/plugged')
   Plug 'tpope/vim-fugitive'
   "Plug 'tpope/vim-surround'
   Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-speeddating'
+
   " show color in background of rgb/hexa
   Plug 'ap/vim-css-color'
 
