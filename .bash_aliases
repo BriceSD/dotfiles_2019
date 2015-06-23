@@ -34,3 +34,6 @@ alias mdtopdf="~/.cabal/bin/pandoc --latex-engine=lualatex --template ~/.pandoc/
 
 # Ranger
 alias r="ranger"
+
+# Fonts
+alias updatefonts="fc-cache && mkfontscale && mkfontdir"

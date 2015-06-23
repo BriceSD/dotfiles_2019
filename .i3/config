@@ -10,12 +10,13 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $dmenu "dmenu -b -f -i -l 10 -fn '-*-Verdana-*-*-*-*-15-*-*-*-*-*-*-*'"
 
 # font for window titles. ISO 10646 = Unicode
-#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-set $fonttype "pango:Terminus 10"
+#set $fonttype "-misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1"
+#set $fonttype "pango:Terminus 10"
+set $fonttype "pango:i3barsymbols 10"
 font $fonttype
-#font xft:Source\ Code\ Pro 10
 
 # workspaces
 set $WS1 1
@@ -61,14 +62,16 @@ workspace_auto_back_and_forth yes
 ## use d to switch back and forth
 bindsym $mod+d workspace back_and_forth
 
-##
+## use Shift d to move a container back and forth and follow it
 bindsym $mod+Shift+d move container to workspace back_and_forth; workspace back_and_forth
 
-##
-bindsym $mod+b exec --no-startup-id quickswitch.py
+## browse between containers as if they were buffers in  vimperator.
+## see https://github.com/proxypoke/quickswitch-for-i3
+bindsym $mod+b exec --no-startup-id quickswitch.py --dmenu=$dmenu
 
-##
-bindsym $mod+Shift+b exec --no-startup-id quickswitch.py -m
+## browse between containers as if they were buffers in  vimperator and make it move to the current workspace.
+## see https://github.com/proxypoke/quickswitch-for-i3
+bindsym $mod+Shift+b exec --no-startup-id quickswitch.py -m --dmenu=$dmenu
 
 ## kill focused window
 bindsym $mod+z kill
@@ -101,10 +104,10 @@ bindcode 121 exec --no-startup-id amixer set Master toggle -q
 #bindsym Control+XF86AudioLowerVolume exec clementine_CTRL.py previous
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+v split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+h split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+i fullscreen
@@ -157,7 +160,7 @@ bindsym $mod+Shift+VoidSymbol move container to workspace  $WS10
 bindsym $mod+Shift+X reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+p restart
-# exit i3 (logs # exit i3 (logs you out of your X session)
+# exit i3 (logs # exit i3 (logs you out of your X session) but ask a confirmation before
 bindsym $mod+Shift+o exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
@@ -176,12 +179,14 @@ mode "resize" {
 
 bindsym $mod+p mode "resize"
 
-# This is awesome, see : http://www.slackword.net/?p=657
+# Vim-like/emacs-like marks
+## This is awesome, see : http://www.slackword.net/?p=657
 mode "focused" {
 
                 # hardcoded focus keybindings
                 bindsym i [class="(?i)firefox"] focus
-                bindsym e [class="(?i)thunderbird"] focus
+                #bindsym e [class="(?i)thunderbird"] focus
+                bindsym e [title="(?i)mutt"] focus
                 bindsym u [class="(?i)zathura"] focus
 
                 # keybindings for marking and jumping to clients
