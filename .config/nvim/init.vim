@@ -5,7 +5,7 @@
 set nocompatible
 filetype off
 
-call plug#begin('~/.nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
   "Plug 'gmarik/Vundle.vim'
   Plug 'tpope/vim-fugitive'
   "Plug 'tpope/vim-surround'
