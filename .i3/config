@@ -34,6 +34,9 @@ set $WS10 10: DL
 assign [class="Clementine"] → $WS8
 assign [class="JDownloader"] → $WS10
 
+bindsym $mod+f exec --no-startup-id setxkbmap fr
+bindsym Mod1+j exec --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
+
 # floating by default
 ## Firefox
 for_window [title="Library"] floating enable
@@ -44,7 +47,7 @@ for_window [title="Firefox Preferences"] floating enable
 bindsym $mod+x exec --no-startup-id firefox
 
 ## launch intellij idea
-bindsym $mod+y exec --no-startup-id sh $HOME/IntelliJIdea/bin/idea.sh
+bindsym $mod+y exec --no-startup-id intellij-idea-ultimate-edition
 #
 ## launch pycharm
 bindsym $mod+agrave exec --no-startup-id sh $HOME/Pycharm/bin/pycharm.sh
@@ -56,10 +59,10 @@ bindsym $mod+Return exec urxvt
 ## Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-## enable workspace back and forth
+## enable workspace toggle
 workspace_auto_back_and_forth yes
 
-## use d to switch back and forth
+## use d to switch toggle
 bindsym $mod+d workspace back_and_forth
 
 ## use Shift d to move a container back and forth and follow it
@@ -238,10 +241,12 @@ exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLA
 exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
 
 ## Music
-exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
+#exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
 
 ## JDownloader
-exec --no-startup-id i3-msg 'workspace $WS10; exec /bin/JDownloader'
+#exec --no-startup-id i3-msg 'workspace $WS10; exec /bin/JDownloader'
 
 ## Terminal
 exec --no-startup-id i3-msg 'workspace $WS3; exec urxvt'
+
+exec --no-startup-id sh xset r rate 200 35
