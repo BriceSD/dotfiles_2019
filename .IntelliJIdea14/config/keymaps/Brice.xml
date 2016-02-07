@@ -1,298 +1,297 @@
 <keymap version="1" name="Brice" parent="$default">
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="ctrl quote" />
+  </action>
   <action id="Arrangement.Alias.Rule.Match.Condition.Move.Down">
-    <keyboard-shortcut first-keystroke="control J" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
   <action id="Arrangement.Rule.Group.Condition.Move.Down">
-    <keyboard-shortcut first-keystroke="control J" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
   <action id="Arrangement.Rule.Match.Condition.Move.Down">
-    <keyboard-shortcut first-keystroke="control J" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
   <action id="CallHierarchy">
-    <keyboard-shortcut first-keystroke="control alt H" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="C" />
+    <keyboard-shortcut first-keystroke="ctrl alt h" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="c" />
   </action>
-  <action id="CheckinProject" />
+  <action id="CheckinProject">
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
   <action id="CodeCompletion">
-    <keyboard-shortcut first-keystroke="shift SPACE" />
+    <keyboard-shortcut first-keystroke="shift space" />
   </action>
   <action id="CommentByBlockComment">
-    <keyboard-shortcut first-keystroke="shift control SLASH" />
-    <keyboard-shortcut first-keystroke="shift control DIVIDE" />
-    <keyboard-shortcut first-keystroke="shift control COLON" />
+    <keyboard-shortcut first-keystroke="shift ctrl slash" />
+    <keyboard-shortcut first-keystroke="shift ctrl divide" />
+    <keyboard-shortcut first-keystroke="shift ctrl colon" />
   </action>
   <action id="CommentByLineComment">
-    <keyboard-shortcut first-keystroke="control SLASH" />
-    <keyboard-shortcut first-keystroke="control DIVIDE" />
-    <keyboard-shortcut first-keystroke="control COLON" />
+    <keyboard-shortcut first-keystroke="ctrl slash" />
+    <keyboard-shortcut first-keystroke="ctrl divide" />
+    <keyboard-shortcut first-keystroke="ctrl colon" />
   </action>
   <action id="Coverage">
-    <keyboard-shortcut first-keystroke="shift control S" />
+    <keyboard-shortcut first-keystroke="shift ctrl s" />
   </action>
   <action id="EditorCompleteStatement">
-    <keyboard-shortcut first-keystroke="shift control ENTER" />
-    <keyboard-shortcut first-keystroke="control SPACE" />
+    <keyboard-shortcut first-keystroke="shift ctrl enter" />
+    <keyboard-shortcut first-keystroke="ctrl space" />
   </action>
   <action id="EditorDecreaseFontSize">
-    <keyboard-shortcut first-keystroke="shift control alt SUBTRACT" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt subtract" />
   </action>
   <action id="EditorEnter">
-    <keyboard-shortcut first-keystroke="ENTER" />
-    <keyboard-shortcut first-keystroke="control LESS" />
+    <keyboard-shortcut first-keystroke="enter" />
+    <keyboard-shortcut first-keystroke="ctrl less" />
   </action>
   <action id="EditorIncreaseFontSize">
-    <keyboard-shortcut first-keystroke="shift control alt ADD" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt add" />
   </action>
-  <action id="EditorJoinLines">
-    <keyboard-shortcut first-keystroke="shift control M" />
-  </action>
+  <action id="EditorJoinLines" />
   <action id="EditorRight">
-    <keyboard-shortcut first-keystroke="RIGHT" />
-    <keyboard-shortcut first-keystroke="control L" />
+    <keyboard-shortcut first-keystroke="right" />
+    <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
   <action id="EditorUp">
-    <keyboard-shortcut first-keystroke="UP" />
-    <keyboard-shortcut first-keystroke="control K" />
+    <keyboard-shortcut first-keystroke="up" />
+    <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="ExtractMethod">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="M" />
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="E" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="m" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="e" />
   </action>
   <action id="FileStructurePopup">
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="F" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="f" />
   </action>
   <action id="Find">
-    <keyboard-shortcut first-keystroke="control F" />
-    <keyboard-shortcut first-keystroke="alt F3" />
-    <keyboard-shortcut first-keystroke="control F" second-keystroke="F" />
+    <keyboard-shortcut first-keystroke="ctrl f" />
+    <keyboard-shortcut first-keystroke="alt f3" />
+    <keyboard-shortcut first-keystroke="ctrl f" second-keystroke="f" />
   </action>
   <action id="FindBugs.ShowQuickSearch">
-    <keyboard-shortcut first-keystroke="control G" />
+    <keyboard-shortcut first-keystroke="ctrl g" />
   </action>
   <action id="FindNext">
-    <keyboard-shortcut first-keystroke="F3" />
+    <keyboard-shortcut first-keystroke="f3" />
   </action>
   <action id="Generate">
-    <keyboard-shortcut first-keystroke="alt G" second-keystroke="alt G" />
+    <keyboard-shortcut first-keystroke="alt g" second-keystroke="alt g" />
+  </action>
+  <action id="GenerateJavadoc">
+    <keyboard-shortcut first-keystroke="alt g" second-keystroke="alt d" />
   </action>
   <action id="GotoDeclaration">
     <mouse-shortcut keystroke="control button1" />
     <mouse-shortcut keystroke="button2" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="D" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="d" />
   </action>
   <action id="GotoImplementation">
     <mouse-shortcut keystroke="control alt button1" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="alt D" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="alt d" />
   </action>
   <action id="GotoLine" />
   <action id="GotoNextError">
-    <keyboard-shortcut first-keystroke="F2" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="E" />
+    <keyboard-shortcut first-keystroke="f2" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="e" />
   </action>
   <action id="GotoPreviousError">
-    <keyboard-shortcut first-keystroke="shift F2" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="shift E" />
+    <keyboard-shortcut first-keystroke="shift f2" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="shift e" />
   </action>
   <action id="GotoRow" />
   <action id="GotoSuperMethod">
-    <keyboard-shortcut first-keystroke="control U" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="S" />
+    <keyboard-shortcut first-keystroke="ctrl u" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="s" />
   </action>
   <action id="GotoTest">
-    <keyboard-shortcut first-keystroke="alt G" second-keystroke="T" />
+    <keyboard-shortcut first-keystroke="alt g" second-keystroke="t" />
   </action>
   <action id="GotoTypeDeclaration">
-    <keyboard-shortcut first-keystroke="shift control B" />
+    <keyboard-shortcut first-keystroke="shift ctrl b" />
     <mouse-shortcut keystroke="shift control button1" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="T" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="t" />
   </action>
+  <action id="Images.Editor.ToggleGrid" />
   <action id="Inline">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="D" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="d" />
   </action>
   <action id="InsertLiveTemplate">
-    <keyboard-shortcut first-keystroke="alt G" second-keystroke="J" />
+    <keyboard-shortcut first-keystroke="alt g" second-keystroke="j" />
   </action>
   <action id="IntroduceConstant">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="C" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="c" />
   </action>
   <action id="IntroduceField">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="F" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="f" />
   </action>
   <action id="IntroduceParameter">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="P" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="p" />
   </action>
   <action id="IntroduceVariable">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="V" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="v" />
   </action>
   <action id="InvertBoolean">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="B" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="b" />
   </action>
   <action id="MakeStatic">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="S" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="s" />
   </action>
   <action id="MethodDown">
-    <keyboard-shortcut first-keystroke="alt J" />
+    <keyboard-shortcut first-keystroke="alt j" />
   </action>
   <action id="MethodHierarchy">
-    <keyboard-shortcut first-keystroke="shift control H" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="M" />
+    <keyboard-shortcut first-keystroke="shift ctrl h" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="m" />
   </action>
   <action id="MethodUp">
-    <keyboard-shortcut first-keystroke="alt K" />
+    <keyboard-shortcut first-keystroke="alt k" />
   </action>
   <action id="MoveLineDown">
-    <keyboard-shortcut first-keystroke="control alt J" />
+    <keyboard-shortcut first-keystroke="ctrl alt j" />
   </action>
   <action id="MoveLineUp">
-    <keyboard-shortcut first-keystroke="control alt K" />
+    <keyboard-shortcut first-keystroke="ctrl alt k" />
   </action>
   <action id="MoveStatementDown">
-    <keyboard-shortcut first-keystroke="shift control J" />
+    <keyboard-shortcut first-keystroke="shift ctrl j" />
   </action>
   <action id="MoveStatementUp">
-    <keyboard-shortcut first-keystroke="shift control K" />
+    <keyboard-shortcut first-keystroke="shift ctrl k" />
   </action>
   <action id="NewElement">
-    <keyboard-shortcut first-keystroke="alt G" second-keystroke="alt G" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="alt n" />
   </action>
   <action id="NextOccurence">
-    <keyboard-shortcut first-keystroke="control alt DOWN" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="J" />
+    <keyboard-shortcut first-keystroke="ctrl alt down" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="j" />
   </action>
   <action id="NextSplitter">
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="K" />
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="L" />
+    <keyboard-shortcut first-keystroke="alt v" second-keystroke="r" />
   </action>
   <action id="NextTab">
-    <keyboard-shortcut first-keystroke="alt RIGHT" />
-    <keyboard-shortcut first-keystroke="alt L" />
+    <keyboard-shortcut first-keystroke="alt s" />
   </action>
   <action id="PrevSplitter">
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="J" />
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="H" />
+    <keyboard-shortcut first-keystroke="alt v" second-keystroke="c" />
   </action>
   <action id="PreviousOccurence">
-    <keyboard-shortcut first-keystroke="control alt UP" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="K" />
+    <keyboard-shortcut first-keystroke="ctrl alt up" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="k" />
   </action>
   <action id="PreviousTab">
-    <keyboard-shortcut first-keystroke="alt LEFT" />
-    <keyboard-shortcut first-keystroke="alt H" />
+    <keyboard-shortcut first-keystroke="alt t" />
   </action>
   <action id="Refactorings.QuickListPopupAction">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="alt R" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="alt r" />
   </action>
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="alt Z" second-keystroke="alt Z" />
+    <keyboard-shortcut first-keystroke="alt z" second-keystroke="alt z" />
   </action>
   <action id="RenameElement">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="R" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="r" />
   </action>
   <action id="Replace">
-    <keyboard-shortcut first-keystroke="control F" second-keystroke="R" />
+    <keyboard-shortcut first-keystroke="ctrl f" second-keystroke="r" />
   </action>
   <action id="ReplaceMethodWithMethodObject">
-    <keyboard-shortcut first-keystroke="alt R" second-keystroke="O" />
+    <keyboard-shortcut first-keystroke="alt r" second-keystroke="o" />
   </action>
   <action id="Run">
-    <keyboard-shortcut first-keystroke="shift F10" />
-    <keyboard-shortcut first-keystroke="control S" />
+    <keyboard-shortcut first-keystroke="shift f10" />
+    <keyboard-shortcut first-keystroke="ctrl s" />
   </action>
   <action id="SaveAll" />
   <action id="SelectNextOccurrence" />
   <action id="ShowContent">
-    <keyboard-shortcut first-keystroke="alt M" />
+    <keyboard-shortcut first-keystroke="alt m" />
   </action>
   <action id="ShowFilePath">
-    <keyboard-shortcut first-keystroke="control alt F12" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="G" />
+    <keyboard-shortcut first-keystroke="ctrl alt f12" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="g" />
   </action>
   <action id="ShowNavBar">
-    <keyboard-shortcut first-keystroke="alt EXCLAMATION_MARK" />
+    <keyboard-shortcut first-keystroke="alt exclamation_mark" />
   </action>
   <action id="ShowProjectStructureSettings" />
   <action id="ShowSettings">
-    <keyboard-shortcut first-keystroke="shift control alt S" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt s" />
   </action>
   <action id="SplitHorizontally">
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="shift S" />
+    <keyboard-shortcut first-keystroke="alt v" second-keystroke="shift s" />
   </action>
   <action id="SplitVertically">
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="S" />
+    <keyboard-shortcut first-keystroke="alt v" second-keystroke="s" />
   </action>
   <action id="SurroundWithLiveTemplate">
-    <keyboard-shortcut first-keystroke="alt G" second-keystroke="alt J" />
+    <keyboard-shortcut first-keystroke="alt g" second-keystroke="alt j" />
   </action>
   <action id="SwitchApply">
-    <keyboard-shortcut first-keystroke="shift alt ENTER" />
+    <keyboard-shortcut first-keystroke="shift alt enter" />
   </action>
   <action id="SwitchDown">
-    <keyboard-shortcut first-keystroke="shift alt DOWN" />
+    <keyboard-shortcut first-keystroke="shift alt down" />
   </action>
   <action id="SwitchLeft">
-    <keyboard-shortcut first-keystroke="shift alt LEFT" />
+    <keyboard-shortcut first-keystroke="shift alt left" />
   </action>
   <action id="SwitchRight">
-    <keyboard-shortcut first-keystroke="shift alt RIGHT" />
+    <keyboard-shortcut first-keystroke="shift alt right" />
   </action>
   <action id="SwitchUp">
-    <keyboard-shortcut first-keystroke="shift alt UP" />
+    <keyboard-shortcut first-keystroke="shift alt up" />
   </action>
   <action id="TemplateProjectProperties">
-    <keyboard-shortcut first-keystroke="control alt S" />
+    <keyboard-shortcut first-keystroke="ctrl alt s" />
   </action>
   <action id="ToggleDistractionFreeMode">
-    <keyboard-shortcut first-keystroke="control alt UNDEFINED" />
+    <keyboard-shortcut first-keystroke="ctrl alt w" />
   </action>
   <action id="ToggleFullScreen">
-    <keyboard-shortcut first-keystroke="UNDEFINED" />
+    <keyboard-shortcut first-keystroke="w" />
   </action>
   <action id="TogglePresentationMode">
-    <keyboard-shortcut first-keystroke="control UNDEFINED" />
-    <keyboard-shortcut first-keystroke="alt UNDEFINED" />
+    <keyboard-shortcut first-keystroke="alt w" />
   </action>
   <action id="TypeHierarchy">
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="H" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="h" />
   </action>
   <action id="UML.ActualSize">
-    <keyboard-shortcut first-keystroke="alt NUMPAD9" />
+    <keyboard-shortcut first-keystroke="alt numpad9" />
   </action>
   <action id="UML.ZoomIn">
-    <keyboard-shortcut first-keystroke="alt ADD" />
+    <keyboard-shortcut first-keystroke="alt add" />
   </action>
   <action id="UML.ZoomOut">
-    <keyboard-shortcut first-keystroke="alt SUBTRACT" />
+    <keyboard-shortcut first-keystroke="alt subtract" />
   </action>
   <action id="Unsplit">
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="alt S" />
+    <keyboard-shortcut first-keystroke="alt v" second-keystroke="alt s" />
   </action>
   <action id="UnsplitAll">
-    <keyboard-shortcut first-keystroke="alt V" second-keystroke="shift alt S" />
+    <keyboard-shortcut first-keystroke="alt v" second-keystroke="shift alt s" />
+  </action>
+  <action id="Vcs.UpdateProject">
+    <keyboard-shortcut first-keystroke="shift alt p" />
   </action>
   <action id="VcsShowNextChangeMarker">
-    <keyboard-shortcut first-keystroke="shift control alt DOWN" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="shift J" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt down" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="shift j" />
   </action>
   <action id="VcsShowPrevChangeMarker">
-    <keyboard-shortcut first-keystroke="shift control alt UP" />
-    <keyboard-shortcut first-keystroke="alt N" second-keystroke="shift K" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt up" />
+    <keyboard-shortcut first-keystroke="alt n" second-keystroke="shift k" />
   </action>
   <action id="VimReformatVisual">
-    <keyboard-shortcut first-keystroke="alt Z" second-keystroke="S" />
+    <keyboard-shortcut first-keystroke="alt z" second-keystroke="s" />
   </action>
   <action id="com.github.setial.intellijjavadocs.action.JavaDocGenerateActionOnEditor">
-    <keyboard-shortcut first-keystroke="alt Z" second-keystroke="A" />
+    <keyboard-shortcut first-keystroke="alt z" second-keystroke="a" />
   </action>
   <action id="com.github.setial.intellijjavadocs.action.JavaDocRemoveActionOnEditor">
-    <keyboard-shortcut first-keystroke="alt Z" second-keystroke="alt A" />
+    <keyboard-shortcut first-keystroke="alt z" second-keystroke="alt a" />
   </action>
-  <action id="com.github.setial.intellijjavadocs.action.JavaDocsGenerateActionOnEditor" />
-  <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
-    <keyboard-shortcut first-keystroke="shift alt M" />
-    <keyboard-shortcut first-keystroke="alt M" />
-    <keyboard-shortcut first-keystroke="alt S" second-keystroke="alt S" />
-  </action>
-  <action id="osmedile.intellij.stringmanip.WordsAndCamelToConstantStyleCaseAction">
-    <keyboard-shortcut first-keystroke="alt S" second-keystroke="C" />
+  <action id="com.github.setial.intellijjavadocs.action.JavaDocsGenerateActionOnEditor">
+    <keyboard-shortcut first-keystroke="alt z" second-keystroke="z" />
   </action>
 </keymap>

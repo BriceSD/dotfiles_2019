@@ -6,11 +6,11 @@
     <property name="evlsprt3.14" value="15" />
     <property name="installation.uid" value="adc32ea5-f4eb-488c-831c-9561581e3921" />
     <property name="default.storage.format" value=".idea (directory based)" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/Code&#10;/home/brice/Code/Java/Katas&#10;/usr/lib/jvm/java-7-openjdk-amd64" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Cours_/Info2/S3/ACD4/TP2_ACD4/src&#10;/home/brice/Cours_/Info2/S3/ACD4/TP2_ACD4&#10;/home/brice/Cours_/Info2/S3/ACD4/TP2_ACD4/uml_decorateurPizza.png&#10;/home/brice/Cours_/Info2/S3/ACD4/TP1_ACD4&#10;/usr/lib/jvm/java-8-jdk&#10;/home/brice/Cours_/Info2/S3/ACD4&#10;/home/brice/Code&#10;/home/brice/Code/Java/Katas&#10;/usr/lib/jvm/java-7-openjdk-amd64" />
     <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
     <property name="file.colors.enable.non.project" value="494539" />
     <property name="file.colors.enable.tests" value="2a3b2c" />
-    <property name="lastTip" value="21" />
+    <property name="lastTip" value="48" />
     <property name="ProjectStructure.SecondLevelElements" value="0.2" />
     <property name="project.jdk.splitter" value="0.2" />
     <property name="Non-Project Files" value="494539" />
@@ -19,10 +19,44 @@
     <property name="test_tree_console_proprtion" value="0.2" />
     <property name="power.save.mode" value="false" />
     <property name="FileTemplates.CurrentTab" value="Templates" />
-    <property name="FileTemplates.SelectedTemplate" value="Html" />
+    <property name="FileTemplates.SelectedTemplate" value="JUnit" />
     <property name="FileStructurePopup.narrowDown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="IntelliJ IDEA IU-141.178.9" />
     <property name="project.wizard.template" value="Java" />
     <property name="ColorChooser.RecentColors" value="106-135-89-255,,,255-198-109-255,,,152-118-170-255,,,204-120-50-255" />
+    <property name="DEVKIT_SANDBOX_HISTORY" value="C:\Users\KaliMist\.IntelliJIdea14\system\plugins-sandbox" />
+    <property name="MoveClass.OpenInEditor" value="true" />
+    <property name="MoveClassWithTarget.OpenInEditor" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="FindSplitterProportion" value="0.25" />
+    <property name="KEYMAP" value="javado&#10;plugins&#10;java&#10;javadoc&#10;rearranger" />
+    <property name="SingleInspectionProfilePanel.VERTICAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="SingleInspectionProfilePanel.HORIZONTAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="LayoutCode.optimizeImports" value="true" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
+    <property name="TEMPLATES_FILTER_HISTORY" value="" />
+    <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.5" />
+    <property name="CommitChangeListDialog.DETAILS_SHOW_OPTION_" value="true" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.32780612" />
+    <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
+    <property name="ProjectStructure.TopLevelElements" value="0.15" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="FindBugs-IDEA" />
+    <property name="FILTER" value="" />
+    <property name="PLUGIN_FILTER" value="javascript&#10;node&#10;javadoc" />
+    <property name="PluginShifter.SizeShiftMore" value="10" />
+    <property name="PluginShifter.SortingMode" value="1" />
+    <property name="PluginShifter.IsActivePreserveCase" value="1" />
+    <property name="PluginShifter.ShiftingModeTimestamps" value="0" />
+    <property name="PluginShifter.Dictionary" value="(|htm|html|js|) {&#10;&#9;|array|boolean|element|event|function|number|null|object|string|undefined|&#10;&#9;|alert|prompt|&#10;&#9;|abort|error|load|resize|scroll|unload|&#10;&#9;|input|button|submit|&#10;&#9;|blur|change|focus|reset|select|submit|&#10;&#9;|class|id|name|type|value|&#10;&#9;|click|dblclick|mousedown|mousemove|mouseover|mouseout|mouseup|&#10;&#9;|h1|h2|h3|h4|h5|&#10;&#9;|indexof|lastindexof|&#10;&#9;|keydown|keypress|keyup|&#10;&#9;|touchstart|touchmove|touchend|touchcancel|&#10;&#9;|resize|scroll|zoom|focus|blur|select|change|submit|reset|&#10;&#9;|&lt;!--|--&gt;|&#10;}&#10;(|css|scss|styl|less|sass) {&#10;&#9;|bold|italic|strikethrough|subscript|superscript|underline|&#10;&#9;|block|inline|inline-block|list-item|none|inherit|&#10;&#9;|left|right|both|none|inherit|&#10;&#9;|collapse|visible|hidden|scroll|auto|inherit|&#10;&#9;|absolute|fixed|inherit|relative|static|&#10;&#9;|normal|nowrap|pre|pre-line|pre-wrap|inherit|&#10;}&#10;(|java|php) {&#10;&#9;|assertFalse|assertTrue|&#10;&#9;|public|private|protected|&#10;&#9;|extends|implements|&#10;}&#10;(|java|) {&#10;&#9;|boolean|byte|char|double|float|int|long|short|string|&#10;}&#10;(|php|phtml|twig|) {&#10;&#9;|array|boolean|float|integer|null|object|resource|string|&#10;&#9;|__dir__|__file__|__namespace__|__class__|__line__|__function__|__method__|__trait__|&#10;&#9;|foreach|endforeach|&#10;&#9;|if|else|endif|&#10;}&#10;(|m|) {&#10;&#9;|int|char|float|double|id|BOOL|long|short|signed|unsigned|&#10;}&#10;(|sql|) {&#10;&#9;|bit|tinyint|bool|boolean|smallint|mediumint|int|integer|bigint|float|double|decimal|dec|&#10;&#9;|char|varchar|binary|varbinary|tinyblob|tinytext|blob|text|mediumblob|mediumtext|longblob|longtext|enum|set|&#10;}&#10;(|*|) {&#10;&#9;|absolute|relative|&#10;&#9;|addition|subtraction|multiplication|division|modulus|negation|concatenation|&#10;&#9;|aif|au|mpeg|mpg|mp3|ra|ram|wav|&#10;&#9;|and|or|xor|not|&#10;&#9;|all|none|&#10;&#9;|ascending|descending|&#10;&#9;|ascend|descend|&#10;&#9;|asc|desc|&#10;&#9;|before|after|&#10;&#9;|binary|octal|decimal|hexadecimal|&#10;&#9;|bit|tinyint|bool|boolean|smallint|mediumint|int|integer|bigint|float|double|decimal|dec|&#10;&#9;|branches|tags|trunk|&#10;&#9;|cut|copy|paste|&#10;&#9;|char|varchar|binary|varbinary|tinyblob|tinytext|blob|text|mediumblob|mediumtext|longblob|longtext|enum|set|&#10;&#9;|en|de|fr|it|&#10;&#9;|enabled|disabled|&#10;&#9;|enable|disable|&#10;&#9;|expand|collapse|&#10;&#9;|expanded|collapsed|&#10;&#9;|explode|implode|&#10;&#9;|file|folder|&#10;&#9;|first|last|&#10;&#9;|first|second|third|fourth|fifth|sixth|seventh|ninth|tenth&#10;&#9;|foo|bar|baz|qux|&#10;&#9;|from|until|&#10;&#9;|gif|jpg|png|&#10;&#9;|horizontal|vertical|&#10;&#9;|increment|decrement|&#10;&#9;|january|february|march|april|mai|june|july|august|september|october|november|december|&#10;&#9;|jan|feb|mar|apr|mai|jun|jul|aug|sep|oct|nov|dec|&#10;&#9;|join|split|&#10;&#9;|key|value|&#10;&#9;|list|set|bag|multiset|dictionary|table|tree|sequence|queue|heap|graph|&#10;&#9;|minimum|maximum|&#10;&#9;|min|max|&#10;&#9;|monday|tuesday|wednesday|thursday|friday|saturday|sunday|&#10;&#9;|mon|tue|wed|thu|fri|sat|sun|&#10;&#9;|north|east|south|west|&#10;&#9;|odd|even|&#10;&#9;|ok|cancel|&#10;&#9;|on|off|&#10;&#9;|open|close|&#10;&#9;|over|under|&#10;&#9;|padding|margin|&#10;&#9;|parent|child|&#10;&#9;|pass|fail|&#10;&#9;|positive|negative|&#10;&#9;|prefix|postfix|&#10;&#9;|pre|post|&#10;&#9;|request|response|&#10;&#9;|second|minute|hour|day|month|year|&#10;&#9;|seconds|minutes|hours|days|months|years|&#10;&#9;|shown|hidden|&#10;&#9;|show|hide|&#10;&#9;|small|medium|large|&#10;&#9;|start|end|&#10;&#9;|starts|ends|&#10;&#9;|sum|difference|product|quotient|remainder|opposite|&#10;&#9;|top|right|bottom|left|&#10;&#9;|trace|debug|info|warn|error|&#10;&#9;|true|false|&#10;&#9;|undo|redo|&#10;&#9;|username|password|&#10;&#9;|white|lightgray|gray|darkgray|black|red|pink|orange|yellow|green|magenta|cyan|blue|&#10;&#9;|width|height|&#10;&#9;|yes|no|&#10;&#9;|yesterday|today|tomorrow|&#10;&#9;|zero|one|two|three|four|five|six|seven|eight|nine|ten|&#10;}&#10;" />
+    <property name="AppServerDKsEditor.splitterProportion" value="0.3" />
+    <property name="AssociationsEditor.dividerProportion" value="0.3" />
+    <property name="JSHintOptionsTreeView.MAIN_DIVIDER_PROPORTION" value="0.7" />
+    <property name="JSHintOptionsTreeView.RIGHT_DIVIDER_PROPORTION" value="0.7" />
+    <property name="JSHintOptionsTreeView.TREE_SCROLL_BAR_HORIZONTAL" value="20.0" />
+    <property name="JSHintOptionsTreeView.TREE_SCROLL_BAR_VERTICAL" value="0.0" />
+    <property name="JSHintOptionsTreeView.TREE_SELECTED_NODE_ID" value="13.0" />
+    <property name="com.intellij.openapi.editor.actions.MultiplePasteAction$1.splitter" value="0.3" />
   </component>
 </application>

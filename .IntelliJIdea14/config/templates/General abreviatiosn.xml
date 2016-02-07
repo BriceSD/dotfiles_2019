@@ -46,9 +46,6 @@
       <option name="SBT" value="true" />
       <option name="SSP" value="true" />
       <option name="HAML" value="true" />
-      <option name="PHP" value="true" />
-      <option name="PHP Comment" value="true" />
-      <option name="PHP String Literal" value="true" />
       <option name="CoffeeScript" value="true" />
       <option name="OTHER" value="true" />
     </context>
@@ -100,9 +97,6 @@
       <option name="SBT" value="true" />
       <option name="SSP" value="true" />
       <option name="HAML" value="true" />
-      <option name="PHP" value="true" />
-      <option name="PHP Comment" value="true" />
-      <option name="PHP String Literal" value="true" />
       <option name="CoffeeScript" value="true" />
       <option name="OTHER" value="true" />
     </context>

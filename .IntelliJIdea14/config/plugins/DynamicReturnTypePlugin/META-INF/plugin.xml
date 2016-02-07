@@ -1,0 +1,252 @@
+<idea-plugin version="2">
+    <id>com.ptby.dynamicreturntypeplugin</id>
+    <name>DynamicReturnTypePlugin</name>
+  <version>2.0.5.1</version>
+    <vendor email="pbyrne84@gmail.com" url="https://github.com/pbyrne84/DynamicReturnTypePlugin">P Byrne</vendor>
+
+    <description><![CDATA[
+        Intellij/Phpstorm PHP plugin to allow a dynamic return type from ALL method/function calls, not just static methods. <br/>
+        It can use either the instance type of the passed parameter, string lookup or ::class.
+        It can also use masking and custom javascript callbacks to massage the return type to enable aliasing.<br/>
+
+        Internal signature resolution has been completely reworked to allow better chaining/stability of results.
+        It should also play nicely with other plugin service providers etc.
+
+        It can be configured for :
+         <ul>
+            <li>Instance method calls</li>
+            <li>Static method calls</li>
+            <li>Function calls</li>
+        </ul>
+
+        <b>Full documentation with examples on github page for custom manipulation with rhino javascript versus the old
+        mask methodology can be found here :-</b> <br>
+        <a href="https://github.com/pbyrne84/DynamicReturnTypePlugin">https://github.com/pbyrne84/DynamicReturnTypePlugin</a> <br/>
+        <br>
+
+        <b>Demo environment which is used to verify edge case are catered for ( example dynamicReturnTypeMeta.json etc. )
+        can be found here :-</b> <br>
+        <a href="https://github.com/pbyrne84/DynamicReturnTypePluginTestEnvironment">https://github.com/pbyrne84/DynamicReturnTypePluginTestEnvironment</a> <br> <br>
+
+
+        Accepts the following to calculate return type
+        <ul>
+            <li>Parameter object instance( eg. new \DOMDocument() as a parameter instance value will infer a <br/>
+            DOMDocument will be returned )</li>
+            <li>Parameter string type ( eg. '\DOMDocument' as a parameter string value will infer a DOMDocument<br/>
+             will be returned )</li>
+            <li>Class constants that resolve to __CLASS__ will resolve similar to the ::class feature in 5.5 behaves.</li>
+        </ul>
+
+        <h3>Configuration</h3>
+        Example dynamicReturnTypeMeta.json configuration in project root       <br/>
+
+    {                                                               <br/>
+        "methodCalls": [                                            <br/>
+            {                                                       <br/>
+                "class": "\\Phockito",                              <br/>
+                "method": "mock",                                   <br/>
+                "position": 0                                       <br/>
+            },                                                      <br/>
+             {                                                      <br/>
+                "class": "\\Phockito",                              <br/>
+                "method": "verify",                                 <br/>
+                "position": 0                                       <br/>
+            },                                                      <br/>
+             {                                                      <br/>
+                "class": "\\Phockito",                              <br/>
+                "method": "maskExample",                                 <br/>
+                "position": 0                                       <br/>
+                "mask": "Test%sModel"                                       <br/>
+            }                                                         <br/>
+        ],                                                          <br/>
+        "functionCalls": [                                          <br/>
+            {                                                       <br/>
+                "function": "\\verify",                             <br/>
+                "position": 0                                       <br/>
+            },                                                      <br/>
+            {                                                       <br/>
+                "function": "\\mock",                               <br/>
+                "position": 0                                       <br/>
+            },                                                      <br/>
+            {                                                       <br/>
+                "function": "\\maskExample",                        <br/>
+                "position": 0                                       <br/>
+                "mask": "Test%sModel"                                 <br/>
+            }                                                         <br/>
+        ]                                                           <br/>
+    }                                                   <br/>  <br/>
+
+        Position is the parameter index to infer the return type from.<br/>
+        Classes and function names must be fully qualified with a leading \ as per example.<br/>
+        Static method calls should behave the same as instance calls.
+
+      ]]></description>
+
+    <change-notes>
+        <![CDATA[
+               <h3>2.0.5.1</h3>
+       <ul>
+       <li>
+          Fix index out of bounds.
+       </li>
+       </ul>
+
+       <h3>2.0.5</h3>
+       <ul>
+       <li>
+        Fixed masks causing issues with ::class as a parameter. This means the following mask types now work as expected.<br/>
+         <br/>
+        1. Masks that combine with a fixed type.<br/>
+        "%s|\\PHPUnit_Framework_MockObject_MockObject" <br/>
+ <br/>
+        2. Masks that convert to a list.<br/>
+        "%s[]"
+
+       </li>
+       </ul>
+
+        <h3>2.0.4</h3>
+       <ul>
+       <li>
+        <a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/50">Added constant recursion</a>
+       </li>
+       </ul>
+
+        <h3>2.0.3</h3>
+       <ul>
+       <li>
+        Added basic array access
+         <a href="https://github.com/pbyrne84/DynamicReturnTypePluginTestEnvironment/blob/master/TestEnvironment/lib/DynamicReturnTypePluginTestEnvironment/ArrayAccessTest.php">examples</a>
+       </li>
+       <li>
+        Added <a href="https://github.com/pbyrne84/DynamicReturnTypePluginTestEnvironment/blob/master/TestEnvironment/dynamicReturnTypeMeta.json#L99-99">offset get</a>
+       </li>
+       </ul>
+      <h3>2.0.2</h3>
+       <ul>
+       <li>
+        Fix ::class resolution in 141.1619
+       </li>
+       </ul>
+
+       <h3>2.0.1</h3>
+       <ul>
+       <li><a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/35">Completely reworked all signature processing to allow fluent chaining between containers, including source container/locator being symfony</a>.
+           examples : <br/>
+          <a href="https://github.com/pbyrne84/DynamicReturnTypePluginTestEnvironment/blob/master/TestEnvironment/lib/DynamicReturnTypePluginTestEnvironment/Symfony/TestController.php">Symfony controller to other container</a><br/>
+          <a href="https://github.com/pbyrne84/DynamicReturnTypePluginTestEnvironment/blob/master/TestEnvironment/lib/DynamicReturnTypePluginTestEnvironment/ChainedDynamicReturnTypeTest.php">Generic container to container</a><br/>
+       </li>
+       </ul>
+
+        <h3>1.1.7</h3>
+          <ul>
+              Fixed https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/39 as field is not always a field implementation so casts to interface now
+          </ul>
+          <ul>
+              Fixed https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/36 as internal kotlin to java interop was buggy
+          </ul>
+          <ul>
+              <a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/28">Added implementation of include file resolution</a>
+          </ul>
+        </ul>
+
+          <h3>1.1.6</h3>
+           <ul>
+            <li>Allow configuration of script engines by environment variables to set paths to groovy(IDEA_GROOVY_JAR_PATH) and nashorn(IDEA_JAVASCRIPT_JAR_PATH).
+            For javascript nashorn.jar is required for java 8 installs. For groovy groovy-all-2.2.1.jar is required.
+            This path is only called if it cannot create using default classpath.
+            </li>
+            <li><a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/24">Multiple types assigned with masks</a></li>
+          </ul>
+
+          <h3>1.1.5</h3>
+           <ul>
+            <li>Alias : to \ in string parameters</li>
+          </ul>
+
+        <h3>1.1.4</h3>
+           <ul>
+            <li>Enable list handling in masks ( use %s[] - only handles strings( not xxx:class ) for now )</li>
+            <li>Fix class constant issues</li>
+            <li>Fix thread safety on script/config paths</li>
+          </ul>
+
+            <h3>1.1.3</h3>
+           <ul>
+            <li>Fix script loading race condition</li>
+          </ul>
+
+      <h3>1.1.2</h3>
+           <ul>
+            <li>Allow javascript callbacks, <a href="https://github.com/pbyrne84/DynamicReturnTypePlugin">documentation...</a></li>
+          </ul>
+
+         <h3>1.1.1</h3>
+           <ul>
+            <li><a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/19#issuecomment-36117500">Fixed static method calls returning the configured container</a></li>
+            <li>Fix race condition with project reinitialisation</li>
+            <li>Allow chaining of one container to another configured container(not fluent)
+            side part of https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/19</li>
+          </ul>
+
+
+        <h3>1.1.0</h3>
+           <ul>
+            <li><a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/15">Removed limitation that the config file have to be in the root, multiple configs are now allowed and merge</a>
+            <li>String class constants will now be analyzed<br/>
+          </ul>
+
+         <h3>1.0.9</h3>
+           <ul>
+            <li><a href="https://github.com/pbyrne84/DynamicReturnTypePlugin/issues/16">Fixed local variables that are returned from factories not having the ability to have dynamic return types</a>
+          </ul>
+
+        <h3>1.0.8 </h3>
+         <ul>
+            <li>Compiled with java 1.6 for compatibility<br/>
+            <li>Fixed issues with global functions called with no leading backslash in namespaces playing with signatures and breaking completion <br/>
+        </ul>
+
+        <h3>1.0.7 </h3>
+         <ul>
+            <li>Fix ::class for php 5.5<br/>
+        </ul>
+
+        ]]>
+
+    </change-notes>
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="141.1619"/>
+    <extensions defaultExtensionNs="com.intellij">
+     </extensions>
+
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+        <component>
+            <implementation-class>com.ptby.dynamicreturntypeplugin.ProjectOpenListener</implementation-class>
+        </component>
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+<!--        <php.typeProvider implementation="com.ptby.dynamicreturntypeplugin.DynamicReturnTypeProvider"/>-->
+        <php.typeProvider2 implementation="com.ptby.dynamicreturntypeplugin.DynamicReturnTypeProvider"/>
+    </extensions>
+    <depends>com.jetbrains.php</depends>
+    <depends>com.intellij.modules.platform</depends>
+</idea-plugin>

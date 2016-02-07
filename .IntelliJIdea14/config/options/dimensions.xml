@@ -1,28 +1,57 @@
 <application>
   <component name="DimensionService">
-    <location key="FileChooserDialogImpl.0.0.1920.1080" x="747" y="350" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="129" y="104" />
     <location key="WELCOME_SCREEN.0.0.1920.1080" x="958" y="230" />
-    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="694" y="605" />
-    <location key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" x="566" y="226" />
-    <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" x="808" y="435" />
-    <location key="SettingsEditor.0.0.1920.1080" x="-2" y="13" />
-    <location key="new project wizard.0.0.1920.1080" x="604" y="171" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="654" y="245" />
+    <location key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" x="562" y="190" />
+    <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" x="796" y="327" />
+    <location key="SettingsEditor.0.0.1920.1080" x="445" y="14" />
+    <location key="new project wizard.0.0.1920.1080" x="600" y="135" />
     <location key="#Updates.0.0.1920.1080" x="718" y="475" />
     <location key="StructurePopup.0.0.1920.1080" x="757" y="354" />
     <location key="com.intellij.ide.util.TipDialog.0.0.0.0" x="0" y="713" />
     <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080" x="1147" y="344" />
-    <size key="FileChooserDialogImpl.0.0.1920.1080" width="464" height="491" />
+    <location key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes.0.0.1920.1080" x="719" y="383" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" x="769" y="242" />
+    <location key="refactoring.ChangeSignatureDialog.0.0.1920.1080" x="702" y="162" />
+    <location key="com.intellij.testIntegration.createTest.CreateTestDialog.0.0.1920.1080" x="523" y="263" />
+    <location key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog.0.0.1920.1080" x="665" y="194" />
+    <location key="CommitChangelistDialog2.0.0.1920.1080" x="606" y="30" />
+    <location key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog.0.0.1920.1080" x="662" y="250" />
+    <location key="Vcs.Push.Dialog.0.0.1920.1080" x="637" y="83" />
+    <location key="#Project_Structure.0.0.1920.1080" x="441" y="104" />
+    <location key="#Browse_Repositories.0.0.1920.1080" x="537" y="148" />
+    <location key="#com.intellij.ws.actions.GenerateJavaFromWsdlAction$1.0.0.1920.1080" x="634" y="297" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1920.1080" x="686" y="254" />
+    <location key="#Browse_JetBrains_Plugins_.0.0.1920.1080" x="539" y="166" />
+    <location key="com.intellij.openapi.vcs.changes.UnversionedViewDialog.0.0.1920.1080" x="839" y="294" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$1.0.0.1920.1080" x="791" y="138" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="479" height="491" />
     <size key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.0.0.1920.1080" width="824" height="664" />
     <size key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" width="350" height="226" />
-    <size key="SettingsEditor.0.0.1920.1080" width="960" height="1034" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1026" height="1034" />
     <size key="new project wizard.0.0.1920.1080" width="822" height="714" />
     <size key="#Updates.0.0.1920.1080" width="473" height="220" />
-    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1920" height="211" />
-    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1920" height="211" />
-    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1920" height="211" />
-    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1920" height="211" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1874" height="289" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1874" height="289" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1874" height="289" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1874" height="289" />
     <size key="StructurePopup.0.0.1920.1080" width="404" height="391" />
     <size key="javadoc.popup.0.0.1920.1080" width="483" height="172" />
     <size key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080" width="576" height="407" />
+    <size key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" width="378" height="578" />
+    <size key="refactoring.ChangeSignatureDialog.0.0.1920.1080" width="505" height="729" />
+    <size key="com.intellij.testIntegration.createTest.CreateTestDialog.0.0.1920.1080" width="859" height="491" />
+    <size key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog.0.0.1920.1080" width="580" height="664" />
+    <size key="CommitChangelistDialog2.0.0.1920.1080" width="691" height="894" />
+    <size key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog.0.0.1920.1080" width="646" height="553" />
+    <size key="Vcs.Push.Dialog.0.0.1920.1080" width="600" height="563" />
+    <size key="#Project_Structure.0.0.1920.1080" width="1028" height="844" />
+    <size key="#Browse_Repositories.0.0.1920.1080" width="828" height="683" />
+    <size key="#com.intellij.ws.actions.GenerateJavaFromWsdlAction$1.0.0.1920.1080" width="641" height="479" />
+    <size key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1920.1080" width="528" height="498" />
+    <size key="#Browse_JetBrains_Plugins_.0.0.1920.1080" width="828" height="683" />
+    <size key="com.intellij.openapi.vcs.changes.UnversionedViewDialog.0.0.1920.1080" width="231" height="465" />
+    <size key="com.intellij.openapi.editor.actions.MultiplePasteAction$1.0.0.1920.1080" width="328" height="776" />
   </component>
 </application>

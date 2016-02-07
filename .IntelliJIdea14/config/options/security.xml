@@ -1,17 +1,18 @@
 <application>
   <component name="PasswordDatabase">
-    <option name="MASTER_PASSWORD_INFO" value="01000000d08c9ddf0115d1118c7a00c04fc297eb010000006779478dc6b8d241807a3bc653f0f89200000000160000004d006100730074006500720020004b006500790000001066000000010000200000000dfebb6ee1a60813dc420fcb6f9dbd3c487a8ca153ee4f4f93dfd67c3144648f000000000e80000000020000200000004c63dc57a25fa6f4524385edb675394fbe9c8a5c44c6a5fe1d428486cf12a06420000000e0fdeb4f0359b639e7c6eccf3dfdd4f453598a26621ea029431af5ff5ee4ed58400000004a2e9e8134393a8346466827804da4cd41b4a9ec44c974cbcf582de10e4106a99abfecf6eec59b9ac403be5c94680d4a8bfc5f976b3871f04018d9d4c8159413" />
     <option name="PASSWORDS">
       <array>
         <array>
           <option value="b3833512e686c891a2b917fc934f3af9f873b1ac5d3f8de4e131c9f12e06f99b" />
           <option value="0ddc1748b725670bdd6bc5ba41f6db222f1b7ab9b3b23720044a46a674daaac2" />
           <option value="25de66d1c73fcc33ce65c8c37c0cd441e8ca1172ddbbef735c771be39fb2ebb9" />
+          <option value="411a415077a15a4b19e5fb1e23a37ff3fcd5d23ec505060db75551d5bd0b9a6f" />
         </array>
         <array>
           <option value="d4ea7c79597c8f5e05cc28e467a65156" />
           <option value="6c59c70f672011ddeeef9cc9a5c992da" />
           <option value="88556a1e01d701f413fbc89062564121b8030d35121215476cfed0cf4358f773" />
+          <option value="d764db83edac7b200d45bfef4028c97bb0f083baddc3953f6c8ffbfc8cfa4868" />
         </array>
       </array>
     </option>

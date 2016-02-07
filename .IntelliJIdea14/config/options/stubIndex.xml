@@ -2,6 +2,10 @@
   <component name="FileBasedIndex">
     <option name="registeredIndices">
       <list>
+        <option value="Py.class.super" />
+        <option value="Py.function.shortName" />
+        <option value="Py.class.shortNameInsensitive" />
+        <option value="Py.class.shortName" />
         <option value="sc.implicit.function.name" />
         <option value="sc.self.type.class.name.key" />
         <option value="sc.super.class.name" />
@@ -89,6 +93,25 @@
         <option value="Css.class" />
         <option value="dom.elementClass" />
         <option value="dom.namespaceKey" />
+        <option value="Ruby.cucumber.step" />
+        <option value="JRuby.import.shortName" />
+        <option value="Ruby.require.load.shortName" />
+        <option value="Ruby.inheritance.shortName" />
+        <option value="Ruby.method.name" />
+        <option value="Rails.render.file" />
+        <option value="Ruby.method.dynamic.name" />
+        <option value="Ruby.symbol.name" />
+        <option value="Ruby.include.extend.qualified.shortName" />
+        <option value="Ruby.class_eval.receiver" />
+        <option value="Ruby.implicit.class.module.shortName" />
+        <option value="Ruby.class.module.shortName" />
+        <option value="Ruby.top.level.include.extend.shortName" />
+        <option value="Ruby.toplevel.shortName" />
+        <option value="Django.foreignKey" />
+        <option value="Py.class.attributes" />
+        <option value="Python.Decorator" />
+        <option value="Py.instanceAttribute.name" />
+        <option value="Py.variable.shortName" />
       </list>
     </option>
   </component>

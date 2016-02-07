@@ -9,6 +9,7 @@
       <find>menteur</find>
       <find>salu</find>
       <find>salut</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>caca</replace>
