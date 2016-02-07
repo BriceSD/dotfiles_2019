@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".pandoc .urxvt .zgen .lesskey .conkyrc .Xdefaults .xinitrc .i3status .xkb .fonts .i3 .IntelliJIdea14 .nvim .tmux .tmuxinator .bash_aliases .bashrc .nvimrc .tmux.conf .vimperatorrc .vimrc.jeop .zshrc .oh-my-zsh"    # list of files/folders to symlink in homedir
+files=".pandoc .urxvt .zgen .lesskey .conkyrc .Xdefaults .xinitrc .i3status .xkb .fonts .i3 .IntelliJIdea14 .config/nvim .tmux .tmuxinator .bash_aliases .bashrc .tmux.conf .vimperatorrc .vimrc.jeop .zshrc .oh-my-zsh"    # list of files/folders to symlink in homedir
 
 ##########
 
