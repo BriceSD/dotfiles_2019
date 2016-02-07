@@ -1,0 +1,16 @@
+snippet eol "eol"
+<!-- end of list -->
+endsnippet
+
+snippet header "Header for my courses" b
+---
+title: ${1:`!v expand('%:t:r')`}
+author:
+- name: ${2:iam`!v s:Ulti_ExpandSnip()`}
+  email: brice.saunier@gmail.com
+date: `!v strftime("%m %Y")`
+...
+
+# ${3:Introduction}
+$0
+endsnippet

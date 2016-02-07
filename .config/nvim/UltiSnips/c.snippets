@@ -1,0 +1,42 @@
+snippet iter "Iterate through an array"
+for(int ${1:i} = ${2:0}; i < ${3:Content}; $1${4:++}){
+  $5;
+}
+$0
+endsnippet
+
+snippet tq "Create a while"
+while($1){
+  $2
+}
+$0
+endsnippet
+
+snippet ftq "Create a do while"
+do{
+  $1
+}while($2);
+$0
+endsnippet
+
+snippet pf "printf()"
+printf("$1"$2);
+$0
+endsnippet
+
+snippet main "Create a main"
+int main(int argc, char *argv[]){
+  $0
+}
+endsnippet
+
+snippet iii "Create a if{}"
+if($1){
+	$0
+}
+endsnippet
+
+snippet ii "Create a if"
+if($1)
+	$0
+endsnippet
