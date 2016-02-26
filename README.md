@@ -1,4 +1,4 @@
-This readme is outdated
+This readme is outdated, the installation may not work properly.
 
 Installation
 ===
