@@ -150,5 +150,11 @@ zle -N zle-line-init
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#SDK path
+export ANDROID_HOME=/opt/android-sdk
+
+export PATH=/opt/android-sdk/platform-tools:$PATH
+export PATH=/opt/android-sdk/tools:$PATH
+
 export NVM_DIR="/home/brice/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
