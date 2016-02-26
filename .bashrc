@@ -126,8 +126,6 @@ fi
 # set 256 colors
 #export TERM=screen-256color
 
-#SDK path
-export ANDROID_HOME=/opt/android-sdk
 
 # Default editor
 export EDITOR='nvim'
