@@ -5,6 +5,7 @@ alias sv='sudoedit'
 # Pacman
 alias pS='sudo pacman -S'
 alias pi='sudo pacman -S'
+alias pyu='sudo pacman -Sy archlinux-keyring && sudo pacman -Su'
 alias yS='yaourt -S'
 alias yi='yaourt -S'
 
@@ -37,3 +38,4 @@ alias r="ranger"
 
 # Fonts
 alias updatefonts="fc-cache && mkfontscale && mkfontdir"
+alias sw="systemctl stop NetworkManager.service && systemctl stop netctl.service && wifi-menu"

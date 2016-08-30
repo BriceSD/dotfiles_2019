@@ -240,6 +240,9 @@ exec_always --no-startup-id unclutter -idle 1 -jitter 2 -root &
 exec_always --no-startup-id xkbcomp -I$HOME/.xkb $HOME/.xkb/jeopPETM.xkb $DISPLAY
 exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
 
+## Keypress repeat rate
+exec_always --no-startup-id  "sh `xset r rate 200 35`"
+
 ## Music
 #exec --no-startup-id i3-msg 'workspace $WS8; exec clementine'
 
@@ -249,4 +252,3 @@ exec_always --no-startup-id sh $HOME/.xkb/jeopPETMxCape.sh
 ## Terminal
 exec --no-startup-id i3-msg 'workspace $WS3; exec urxvt'
 
-exec `xset r rate 200 35`

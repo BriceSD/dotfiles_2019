@@ -1,0 +1,9 @@
+snippet fnj "Add a JQuery plugin function" b
+(function ($){
+$.fn.${1} = function(){
+  ${2}
+  return this;
+	};
+}(jQuery));
+$0
+endsnippet

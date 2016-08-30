@@ -1,0 +1,17 @@
+snippet fnj "Add JQuery function plugin" b
+(function($){
+  $.fn.$1 = function(){
+    $2;
+    return this;
+  };
+}(jQuery));
+$0
+endsnippet
+
+snippet fn "Add function plugin" b
+$.fn.$1 = function(){
+  $2;
+  return this;
+};
+$0
+endsnippet
